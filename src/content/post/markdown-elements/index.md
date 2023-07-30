@@ -114,9 +114,9 @@ Image in the same folder: `src/content/post/markdown-elements/logo.png`
 
 ![Astro theme cactus logo](./logo.png)
 
-Image in the aliased assets folder: `src/assets/about-astro.png`
+Image in the aliased assets folder: `src/assets/jack.jpeg`
 
-![A cartoon cactus looking at the Astro.build logo](~/assets/about-astro.png)
+![Jack holding a kangaroo joey](~/assets/jack.jpeg)
 
 ## Links
 

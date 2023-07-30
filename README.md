@@ -1,10 +1,3 @@
-<div align="center">
-  <img alt="Astro Theme Cactus logo" src="./gh-assets/astro-cactus-logo.png" width="70" />
-</div>
-<h1 align="center">
-  🚀 Astro Theme Cactus 🌵
-</h1>
-
 Astro Theme Cactus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
 
 ## Key Features
@@ -34,8 +27,6 @@ Check out the [Demo](https://astro-theme-cactus.netlify.app/), hosted on Netlify
 [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrismwilliams/astro-theme-cactus) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fchrismwilliams%2Fastro-theme-cactus&project-name=astro-theme-cactus)
 
 ## Commands
-
-Replace pnpm with your choice of npm / yarn
 
 | Command          | Action                                                         |
 | :--------------- | :------------------------------------------------------------- |
@@ -93,43 +84,11 @@ Note the current build will display a warning in the console, you can follow thi
 
 If you would rather not include this integration, simply remove the component `src/components/Search.astro`, and uninstall both `@pagefind/default-ui` & `pagefind` from package.json. You will also need to remove the postbuild script from here as well.
 
-## Analytics
-
-You may want to track the number of visitors you receive to your blog/website in order to understand trends and popular posts/pages you've created. There are a number of providers out there one could use, including web hosts such as [vercel](https://vercel.com/analytics), [netlify](https://www.netlify.com/products/analytics/), and [cloudflare](https://www.cloudflare.com/web-analytics/).
-
-This theme/template doesn't include a specific solution due to there being a number of use cases and/or options which some people may or may not use.
-
-You may be asked to included a snippet inside the **HEAD** tag of your website when setting it up, which can be found in `src/layouts/Base.astro`. Alternatively, you could add the snippet in `src/components/BaseHead.astro`.
-
-Another popular provider is google analytics which you could integrate via the above method, or, for example adding [astro-google-analytics](https://www.npmjs.com/package/astro-google-analytics)
-
-```bash
-pnpm install astro-google-analytics
-```
-
-Edit `src/layouts/Base.astro`, and add:
-
-```astro
----
-import { GoogleAnalytics } from "astro-google-analytics";
-// ...other imports
----
-
-<head>
-	<!-- Replace id with your own Google Analytics ID -->
-	<GoogleAnalytics id="G-XXXXXXXXXX" />
-</head>
-```
-
 ## Deploy
 
 [Astro docs](https://docs.astro.build/en/guides/deploy/) has a great section and breakdown of how to deploy your own Astro site on various platforms and their idiosyncrasies.
 
 By default the site will be built (see [Commands](#commands) section above) to a `/dist` directory.
-
-## Acknowledgment
-
-This theme is inspired by [Hexo Theme Cactus](https://github.com/probberechts/hexo-theme-cactus)
 
 ## License
 
