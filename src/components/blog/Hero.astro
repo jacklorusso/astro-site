@@ -33,7 +33,7 @@ const postDate = getFormattedDate(data.publishDate, { month: "long" });
 {
 	!!data.tags?.length && (
 		<div class="mt-1 sm:mt-0 sm:inline sm:before:mx-2 sm:before:content-['|']">
-			{data.tags.map((tag, i) => (
+			{data.tags.map((tag) => (
 				<>
 					<a
 						class="cactus-link inline-block before:content-['#']"
