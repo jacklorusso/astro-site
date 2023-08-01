@@ -100,14 +100,15 @@ export default {
 		require("@tailwindcss/aspect-ratio"),
 		plugin(function ({ addComponents }) {
 			addComponents({
+				// TODO: undo cactus link, just use global CSS
 				".cactus-link": {
-					"@apply bg-[size:100%_6px] bg-bottom bg-repeat-x": {},
-					backgroundImage:
-						"linear-gradient(transparent,transparent 5px,var(--theme-text) 5px,var(--theme-text))",
-					"&:hover": {
-						backgroundImage:
-							"linear-gradient(transparent,transparent 4px,var(--theme-link) 4px,var(--theme-link))",
-					},
+					"@apply underline": {},
+					// backgroundImage:
+					// 	"linear-gradient(transparent,transparent 5px,var(--theme-text) 5px,var(--theme-text))",
+					// "&:hover": {
+					// 	backgroundImage:
+					// 		"linear-gradient(transparent,transparent 4px,var(--theme-link) 4px,var(--theme-link))",
+					// },
 				},
 				".title": {
 					"@apply text-2xl font-semibold text-accent-2": {},

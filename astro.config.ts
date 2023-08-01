@@ -12,7 +12,7 @@ export default defineConfig({
 	markdown: {
 		remarkPlugins: [remarkUnwrapImages],
 		shikiConfig: {
-			theme: "dracula",
+			theme: "github-dark",
 			wrap: true,
 		},
 	},

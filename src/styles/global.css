@@ -14,7 +14,7 @@
 
 	:root.dark {
 		color-scheme: dark;
-		--theme-bg: #1d1f21;
+		--theme-bg: #000000;
 		--theme-link: #d480aa;
 		--theme-text: #c9cacc;
 		--theme-accent: #2bbc89;
@@ -24,7 +24,7 @@
 	}
 
 	html {
-		@apply h-full scroll-smooth border-t-2 border-textColor;
+		@apply h-full scroll-smooth;
 	}
 
 	html body {
@@ -34,10 +34,12 @@
 	[href^="http"]::after,
 	[href^="https://"]::after
 	{
+		/* Chromium browsers will use empty alt text (presentational). Won't work in Safari/Firefox, will simply not be shown, which I'm okay with. */
 		content: "↗" / "";
 		margin-left: 2px;
 	}
 }
 
 @tailwind components;
+
 @tailwind utilities;

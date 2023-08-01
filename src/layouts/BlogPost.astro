@@ -41,7 +41,7 @@ const { headings } = await post.render();
 	<div class="gap-x-10 lg:flex lg:items-start">
 		{
 			!!headings.length && (
-				<aside class="sticky top-20 order-2 -me-32 hidden basis-64 font-mono lg:block">
+				<aside class="sticky top-20 order-2 -me-72 hidden basis-64 font-mono lg:block">
 					<h2 class="font-semibold">Table of Contents</h2>
 					<ul class="mt-4 text-xs">
 						{headings.map(({ depth, slug, text }) => (
