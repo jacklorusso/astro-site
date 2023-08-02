@@ -30,14 +30,6 @@
 	html body {
 		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-sans font-normal text-textColor;
 	}
-
-	[href^="http"]::after,
-	[href^="https://"]::after
-	{
-		/* Chromium browsers will use empty alt text (presentational). Won't work in Safari/Firefox, will simply not be shown, which I'm okay with. */
-		content: "↗" / "";
-		margin-left: 2px;
-	}
 }
 
 @tailwind components;

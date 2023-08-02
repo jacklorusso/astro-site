@@ -29,13 +29,15 @@ const now: Array<{ title: string; desc: string; href: string }> = [
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">Jack Lo Russo is a software engineer from Sydney, Australia.</h1>
+		<h1 class="title mb-6">
+			Jack Lo Russo is a software engineer from Sydney,&nbsp;Australia.
+		</h1>
 		<p class="mb-4">
-			For a lot of his career, he's been focused on building, maintaining and scaling design
-			systems. He is currently working on the <a href="https://atlassian.design"
-				>Atlassian Design System</a
-			>. Outside of tech, he's passionate about education and the arts. Also, he's a huge Sydney and
-			Seattle sports fan ⚾️
+			For a lot of his career, he's been focused on building, maintaining and
+			scaling design systems. He is currently working on the <a
+				href="https://atlassian.design">Atlassian Design System</a
+			>. Outside of tech, he's passionate about education and the arts. Also,
+			he's a huge Sydney and Seattle sports fan ⚾️
 		</p>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
@@ -57,7 +59,12 @@ const now: Array<{ title: string; desc: string; href: string }> = [
 				now.map(({ href, title, desc }) => (
 					<li class="flex flex-col gap-x-2 sm:flex-row">
 						<p class="min-w-[120px] text-gray-500">{title}:</p>
-						<a href={href} target="_blank" rel="noopener noreferrer" class="cactus-link">
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="underline"
+						>
 							{desc}
 						</a>
 					</li>

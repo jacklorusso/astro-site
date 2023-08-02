@@ -36,7 +36,7 @@ const postDate = getFormattedDate(data.publishDate, { month: "long" });
 			{data.tags.map((tag) => (
 				<>
 					<a
-						class="cactus-link inline-block before:content-['#']"
+						class="inline-block underline before:content-['#']"
 						aria-label={`View more blogs with the tag ${tag}`}
 						href={`/tags/${tag}/`}
 						data-pagefind-filter="tag"
@@ -49,4 +49,4 @@ const postDate = getFormattedDate(data.publishDate, { month: "long" });
 		</div>
 	)
 }
-<p class="mt-8">{data.description}</p>
+<!-- <p class="prose mt-8">{data.description}</p> -->
