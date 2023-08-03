@@ -1,14 +1,45 @@
 ---
-import SocialList from "@/components/SocialList";
-
+const socialLinks = [
+	{
+		title: "Bluesky",
+		href: "https://bsky.app/profile/jacklorusso.com",
+	},
+	{
+		title: "Github",
+		href: "https://github.com/jacklorusso",
+	},
+	{
+		title: "LinkedIn",
+		href: "https://www.linkedin.com/in/jacklorusso/",
+	},
+	{
+		title: "Instagram",
+		href: "https://www.instagram.com/jack.lorusso/",
+	},
+	{
+		title: "Email",
+		href: "mailto:jacklorusso@gmail.com",
+	},
+];
 const year = new Date().getFullYear();
 ---
 
 <footer
-	class="mt-auto flex w-full items-end justify-between pb-4 pt-20 text-center align-top text-gray-500"
+	class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-20 text-center align-top text-gray-500 sm:flex-row sm:justify-between sm:text-sm"
 >
-	<SocialList />
-	<span>
-		&copy; Jack Lo Russo, {year}
-	</span>
+	<nav aria-label="Social links" class="flex gap-x-8">
+		{
+			socialLinks.map((link) => (
+				<a
+					href={link.href}
+					class="px-4 py-2 sm:px-0 sm:py-0 sm:hover:text-textColor sm:hover:underline"
+				>
+					{link.title}
+				</a>
+			))
+		}
+	</nav>
+	<div class="me-0 sm:me-4">
+		&copy;{year} Jack Lo Russo
+	</div>
 </footer>

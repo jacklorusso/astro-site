@@ -1,6 +1,6 @@
 {
-	"name": "astro-cactus",
-	"version": "2.6.0",
+	"name": "jacklorusso.com",
+	"version": "1.0.0",
 	"private": false,
 	"scripts": {
 		"dev": "astro dev",

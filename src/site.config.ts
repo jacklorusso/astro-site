@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
 	// Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
 	title: "jacklorusso.com",
 	// Meta property used as a default description meta property
-	description: "Digital garden of Jack Lo Russo",
+	description: "Jack Lo Russo is a software engineer from Sydney, Australia.",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "en-AU",
 	// Meta property, found in src/components/BaseHead.astro L:42
