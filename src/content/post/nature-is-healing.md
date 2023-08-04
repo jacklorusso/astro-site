@@ -19,7 +19,9 @@ It's an ancient custom for the first post on a new blog to contain at least a li
 
 For the last few years 'micro-blogging' has been enough for me. Any time I really wanted to get something off my chest, I'd turn to Twitter. It worked! And it was really fun while it lasted. But the bird app has imploded ('X' was the final straw for me).
 
-Facing the fact that I need to start fresh somewhere else made me want to do things a little differently this time around. Own more of what I put out there on the web. Flex those writing muscles a little. Transcend the cringe factor that comes with sharing something honest and personal on the internet. Will I actually stick with it? We'll see!
+Facing the fact that I need to start fresh somewhere else made me want to do things a little differently this time around. Own more of what I put out there on the web. Flex those writing muscles a little. Transcend that cringe factor that comes with sharing something honest and personal.
+
+Will I actually stick with it? We'll see!
 
 ## On perfectionism
 
@@ -27,6 +29,6 @@ This site looks meh right now. This is intentional. I'm making myself send it fi
 
 I know myself. I know I could spend hours and hours messing around with typography choices and designing a cool brand and playing with generative art and then get distracted by something else and never ship anything. I've been there way too many times before. For now, system fonts and normcore vibes will suffice.
 
-In any case, I'm not sure exactly what I will do or say with this site, and for that reason, I'm not actually _ready_ to design it properly yet. As all good designers know, you can't beat designing around real content (kill lorem ipsum dead!)
+In any case, I'm not sure exactly what I will do or say with this site, and for that reason, I'm not actually _ready_ to design it properly yet. As all good designers know, you can't beat designing around real content. Kill lorem ipsum!
 
 This website is basically feature complete already due to starting with a [template](https://github.com/chrismwilliams/astro-theme-cactus) (more on that in the next post). So, the tech is out of the way. Now I just need to write.
