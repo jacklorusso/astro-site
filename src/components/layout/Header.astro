@@ -25,7 +25,11 @@ const url = new URL(Astro.request.url);
 
 <header id="main-header" class="group relative mb-28 flex items-center">
 	<div class="flex sm:flex-col">
-		<a href="/" aria-current={url.pathname === "/" ? "page" : false}>
+		<a
+			class="no-underline"
+			href="/"
+			aria-current={url.pathname === "/" ? "page" : false}
+		>
 			<span class="text-xl font-bold">jacklorusso.com</span>
 		</a>
 		<nav

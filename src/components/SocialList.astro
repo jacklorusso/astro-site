@@ -4,10 +4,10 @@ import { SOCIAL_LINKS } from "@/data/constants";
 // *** SVG icons from https://tablericons.com/ ***
 ---
 
-<ul class="flex gap-2">
+<ul class="flex gap-4">
 	<li>
 		<a
-			class="flex items-center sm:hover:text-link"
+			class="flex items-center"
 			href={SOCIAL_LINKS.bluesky}
 			target="_blank"
 			rel="noopener noreferrer"
@@ -34,7 +34,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 	</li>
 	<li>
 		<a
-			class="flex items-center sm:hover:text-link"
+			class="flex items-center"
 			href={SOCIAL_LINKS.github}
 			target="_blank"
 			rel="noopener noreferrer"
@@ -62,7 +62,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 	</li>
 	<li>
 		<a
-			class="flex items-center sm:hover:text-link"
+			class="sm: flex items-center"
 			href={SOCIAL_LINKS.linkedin}
 			target="_blank"
 			rel="noopener noreferrer"
@@ -93,7 +93,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 	</li>
 	<li>
 		<a
-			class="flex items-center sm:hover:text-link"
+			class="flex items-center"
 			href={SOCIAL_LINKS.instagram}
 			target="_blank"
 			rel="noopener noreferrer"
@@ -121,10 +121,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 		</a>
 	</li>
 	<li>
-		<a
-			class="flex items-center sm:hover:text-link"
-			href={`mailto:${SOCIAL_LINKS.email}`}
-		>
+		<a class="flex items-center" href={`mailto:${SOCIAL_LINKS.email}`}>
 			<svg
 				class="mr-1 h-6 w-6"
 				aria-hidden="true"

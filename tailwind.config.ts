@@ -54,7 +54,7 @@ export default {
 				DEFAULT: {
 					css: {
 						a: {
-							"@apply underline no-underline": "",
+							"@apply underline": "",
 						},
 						strong: {
 							fontWeight: "700",
