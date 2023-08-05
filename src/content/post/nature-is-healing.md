@@ -17,9 +17,9 @@ We are _**so**_ back!
 
 It's an ancient custom for the first post on a new blog to contain at least a little navel-gazing. You gotta spend a _little_ time blogging about blogging, maybe make some bold claims about what this site is going to be and how often you're going to post (only to post once or twice more before going completely silent for 4 years). Sorry, I don't make the rules.
 
-For the last few years 'micro-blogging' has been enough for me. Any time I really wanted to get something off my chest, I'd turn to Twitter. It worked! And it was really fun while it lasted. But the bird app has imploded ('X' was the final straw for me).
+For the last few years 'micro-blogging' has been enough for me. Any time I really wanted to get something off my chest, I'd turn to Twitter. It worked! And it was really fun while it lasted. But the bird app has imploded — 'X' was the final straw for me.
 
-Facing the fact that I need to start fresh somewhere else made me want to do things a little differently this time around. Own more of what I put out there on the web. Flex those writing muscles a little. Transcend that cringe factor that comes with sharing something honest and personal.
+Facing the fact that I need to start fresh somewhere else made me want to do things a little differently this time around. Own more of what I put out there on the web. Flex those writing muscles a little. Transcend that cringe factor that comes with sharing something personal.
 
 Will I actually stick with it? We'll see!
 
