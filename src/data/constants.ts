@@ -14,6 +14,6 @@ export const SOCIAL_LINKS = {
 	bluesky: "https://bsky.app/profile/jacklorusso.com",
 	github: "https://github.com/jacklorusso",
 	linkedin: "https://www.linkedin.com/in/jacklorusso/",
-	instagram: "https://www.instagram.com/jack.lorusso/",
+	readcv: "https://read.cv/jacklorusso",
 	email: "jacklorusso@gmail.com",
 };
