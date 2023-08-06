@@ -44,14 +44,23 @@ const url = new URL(Astro.request.url);
 		</a>
 		<nav
 			id="navigation-menu"
-			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-1 rounded-md bg-[--theme-menu-bg] py-4 text-xl text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:ml-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:items-baseline sm:bg-transparent sm:py-0 sm:text-base sm:text-inherit sm:shadow-none sm:backdrop-blur-none"
+			class="absolute inset-x-0 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[--theme-menu-bg] py-4 text-xl shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:ml-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:items-baseline sm:bg-transparent sm:py-0 sm:text-base sm:text-inherit sm:shadow-none sm:backdrop-blur-none"
 			aria-label="Main menu"
 		>
+			<a
+				href="/"
+				class="px-8 py-4 leading-none no-underline hover:underline sm:sr-only sm:py-0"
+				aria-current={url.pathname === "/" ? "page" : false}
+				rel="prefetch"
+			>
+				Home
+			</a>
+
 			{
 				MENU_LINKS.map((link) => (
 					<a
 						href={link.path}
-						class="px-4 py-4 leading-none no-underline hover:underline sm:py-0"
+						class="px-8 py-4 leading-none no-underline hover:underline sm:py-0"
 						aria-current={url.pathname === link.path ? "page" : false}
 						rel="prefetch"
 					>
