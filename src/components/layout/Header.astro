@@ -24,24 +24,24 @@ const url = new URL(Astro.request.url);
 </script>
 
 <header id="main-header" class="group relative mb-28 flex items-center">
-	<div class="flex sm:flex-col">
+	<div class="flex">
 		<a
 			class="no-underline"
 			href="/"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<span class="text-xl font-bold">jacklorusso.com</span>
+			<span class="text-xl font-medium leading-none">jacklorusso.com</span>
 		</a>
 		<nav
 			id="navigation-menu"
-			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-1 rounded-md bg-[--theme-menu-bg] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-1 rounded-md bg-[--theme-menu-bg] py-4 text-xl text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:ml-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:items-baseline sm:bg-transparent sm:py-0 sm:text-base sm:text-inherit sm:shadow-none sm:backdrop-blur-none"
 			aria-label="Main menu"
 		>
 			{
 				MENU_LINKS.map((link) => (
 					<a
 						href={link.path}
-						class="px-4 py-4 hover:underline sm:py-0"
+						class="px-4 py-4 leading-none no-underline hover:underline sm:py-0"
 						aria-current={url.pathname === link.path ? "page" : false}
 						rel="prefetch"
 					>
@@ -53,7 +53,7 @@ const url = new URL(Astro.request.url);
 	</div>
 	<Search />
 	<ThemeToggle />
-	<!-- <button
+	<button
 		id="toggle-navigation-menu"
 		class="group relative ms-2 h-9 w-9 rounded-md p-2 ring-zinc-400 transition-all hover:ring-2 sm:invisible sm:ms-4 sm:hidden"
 		type="button"
@@ -94,5 +94,5 @@ const url = new URL(Astro.request.url);
 				stroke-linejoin="round"
 				d="M6 18L18 6M6 6l12 12"></path>
 		</svg>
-	</button> -->
+	</button>
 </header>

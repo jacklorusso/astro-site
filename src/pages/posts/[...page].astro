@@ -8,7 +8,7 @@ import Pagination from "@/components/Paginator";
 import { getUniqueTags, sortMDByDate } from "@/utils";
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const allPosts = await getCollection("post");
+	const allPosts = await getCollection("post", ({ data }) => !data.draft);
 	const allPostsByDate = sortMDByDate(allPosts);
 	const uniqueTags = getUniqueTags(allPosts);
 	return paginate(allPostsByDate, { props: { uniqueTags }, pageSize: 10 });
@@ -23,7 +23,7 @@ const { page, uniqueTags } = Astro.props;
 
 const meta = {
 	title: "Posts",
-	description: "A collection of posts by me for an Asto starter theme",
+	description: "Personal blog of Jack Lo Russo",
 };
 
 const paginationProps = {
@@ -75,7 +75,11 @@ const paginationProps = {
 						))}
 					</ul>
 					<span class="mt-4 block sm:text-end">
-						<a class="sm:hover:text-accent" href="/tags/" aria-label="View all blog categories">
+						<a
+							class="sm:hover:text-accent"
+							href="/tags/"
+							aria-label="View all blog categories"
+						>
 							View all →
 						</a>
 					</span>

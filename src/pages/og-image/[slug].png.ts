@@ -42,9 +42,16 @@ const markup = (title: string, pubDate: string) => html`<div
 		<p tw="text-2xl mb-6">${pubDate}</p>
 		<h1 tw="text-6xl font-bold leading-snug text-white">${title}</h1>
 	</div>
-	<div tw="flex items-center justify-between w-full p-10 border-t border-[#2bbc89] text-xl">
+	<div
+		tw="flex items-center justify-between w-full p-10 border-t border-[#2bbc89] text-xl"
+	>
 		<div tw="flex items-center">
-			<svg height="60" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 480">
+			<svg
+				height="60"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 272 480"
+			>
 				<path
 					d="M181.334 93.333v-40L226.667 80v40l-45.333-26.667ZM136.001 53.333 90.667 26.667v426.666L136.001 480V53.333Z"
 					fill="#B04304"
@@ -57,7 +64,10 @@ const markup = (title: string, pubDate: string) => html`<div
 					d="m136 53.333 45.333-26.666v120L226.667 120V80L272 53.333V160l-90.667 53.333v240L136 480V306.667L45.334 360V240l45.333-26.667v53.334L136 240V53.333Z"
 					fill="#53C68C"
 				></path>
-				<path d="M45.334 240 0 213.334v120L45.334 360V240Z" fill="#B04304"></path>
+				<path
+					d="M45.334 240 0 213.334v120L45.334 360V240Z"
+					fill="#B04304"
+				></path>
 			</svg>
 			<p tw="ml-3 font-semibold">${siteConfig.title}</p>
 		</div>
@@ -81,6 +91,8 @@ export async function get({ params: { slug } }: APIContext) {
 }
 
 export const getStaticPaths = (async () => {
-	const posts = await getCollection("post");
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
+	const posts = await getCollection("post", ({ data }) => !data.draft);
+	return posts
+		.filter(({ data }) => !data.ogImage)
+		.map(({ slug }) => ({ params: { slug } }));
 }) satisfies GetStaticPaths;

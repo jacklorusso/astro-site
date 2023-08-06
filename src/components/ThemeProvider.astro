@@ -8,12 +8,19 @@ const { themeColorDark, themeColorLight } = siteConfig;
 <script define:vars={{ themeColorDark, themeColorLight }}>
 	const root = document.documentElement;
 	const colorThemeMetaTag = document.querySelector("meta[name='theme-color']");
-	const storedTheme = typeof localStorage !== "undefined" && localStorage.getItem("theme");
+	const storedTheme =
+		typeof localStorage !== "undefined" && localStorage.getItem("theme");
 	const userTheme =
-		storedTheme || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+		storedTheme ||
+		(window.matchMedia("(prefers-color-scheme: light)").matches
+			? "light"
+			: "dark");
 	function setTheme(theme) {
 		root.classList.toggle("dark", theme === "dark");
-		colorThemeMetaTag.setAttribute("content", theme === "dark" ? themeColorDark : themeColorLight);
+		colorThemeMetaTag.setAttribute(
+			"content",
+			theme === "dark" ? themeColorDark : themeColorLight
+		);
 		if (typeof localStorage !== "undefined") {
 			localStorage.setItem("theme", theme);
 		}
