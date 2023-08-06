@@ -50,7 +50,7 @@ const { headings } = await post.render();
 						{headings.map(({ depth, slug, text }) => (
 							<li class="line-clamp-2">
 								<a
-									class={`block no-underline hover:text-accent ${
+									class={`block no-underline hover:text-link ${
 										depth <= 2 ? "mt-3" : "mt-2 ps-3 text-[0.6875rem]"
 									}`}
 									href={`#${slug}`}

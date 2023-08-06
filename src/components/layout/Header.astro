@@ -26,11 +26,21 @@ const url = new URL(Astro.request.url);
 <header id="main-header" class="group relative mb-28 flex items-center">
 	<div class="flex">
 		<a
-			class="no-underline"
+			class="flex items-center no-underline"
 			href="/"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<span class="text-xl font-medium leading-none">jacklorusso.com</span>
+			<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 506 331">
+				<title>Go to the home page</title>
+				<g fill="none" fill-rule="evenodd">
+					<circle cx="165.5" cy="165.5" r="165.5" fill="#EF3085"></circle>
+					<circle cx="340.5" cy="165.5" r="165.5" fill="#34B6DD"></circle>
+					<path
+						fill="#42458A"
+						d="M253,25.2187885 C299.847155,54.5054142 331,106.481298 331,165.718784 C331,224.95627 299.847155,276.932153 253,306.218779 C206.152852,276.932164 175,224.956276 175,165.718784 C175,106.481291 206.152852,54.5054029 253.000015,25.2187789 Z"
+					></path>
+				</g>
+			</svg>
 		</a>
 		<nav
 			id="navigation-menu"
