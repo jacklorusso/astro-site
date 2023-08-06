@@ -1,11 +1,13 @@
-Astro Theme Cactus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
+# jacklorusso.com, built with Astro
 
-## Key Features
+the latest incarnation of my personal site/blog
 
-- Astro Fast 🚀
-- TailwindCSS Utility classes
-- Accessible, semantic HTML markup
-- Responsive & SEO-friendly
+## recognition 🫡
+
+Many thanks to [chrismwilliams/astro-theme-cactus](https://github.com/chrismwilliams/astro-theme-cactus) for a great Astro theme that kicked me off with:
+
+- Astro
+- TailwindCSS
 - Dark / Light mode, using Tailwind and CSS variables
 - [Astro Assets Integration](https://docs.astro.build/en/guides/assets/) for optimised images
 - MD & [MDX](https://docs.astro.build/en/guides/markdown-content/#mdx-only-features) posts
@@ -16,79 +18,7 @@ Astro Theme Cactus is a simple opinionated starter built with the Astro framewor
 - Auto-generated [sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
 - [Pagefind](https://pagefind.app/) static search library integration
 
-## Demo 💻
-
-Check out the [Demo](https://astro-theme-cactus.netlify.app/), hosted on Netlify
-
-## Quick start
-
-[Create a new repo](https://github.com/chrismwilliams/astro-theme-cactus/generate) from this template.
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrismwilliams/astro-theme-cactus) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fchrismwilliams%2Fastro-theme-cactus&project-name=astro-theme-cactus)
-
-## Commands
-
-| Command          | Action                                                         |
-| :--------------- | :------------------------------------------------------------- |
-| `pnpm install`   | Installs dependencies                                          |
-| `pnpm dev`       | Starts local dev server at `localhost:3000`                    |
-| `pnpm build`     | Build your production site to `./dist/`                        |
-| `pnpm postbuild` | Pagefind script to build the static search of your blog posts  |
-| `pnpm preview`   | Preview your build locally, before deploying                   |
-| `pnpm sync`      | Generate types based on your config in `src/content/config.ts` |
-
-## Configure
-
-- Edit the config file `src/site.config.ts` for basic site meta data
-- Update file `astro.config.ts` site property with your own domain
-- Replace & update files within the `/public` folder:
-  - favicon.ico & other social icons
-  - robots.txt - update the Sitemap url to your own domain
-  - manifest.webmanifest
-- Modify file `src/styles/global.css` with your own light and dark styles
-- Edit social links in `src/data/constants.ts` and in turn `src/components/SocialList.astro` to add/replace your media profile. Icons used can be found @ [tablericons](https://tablericons.com/)
-- Create / edit posts for your blog within `src/content/post/` with .md/mdx file(s). See [below](#adding-posts) for more details.
-- OG Image:
-  - If you would like to change the style of the generated image the Satori library creates, open up `src/pages/og-image/[slug].png.ts` to the markup function where you can edit the html/tailwind-classes as necessary. You can also use this [satori playground](https://og-playground.vercel.app/) to aid your design.
-  - If you would like to generate svg og images rather than the default .png ones, you will need to remove the @resvg/resvg-js library, and return the svg within the body of the get function from the file `src/pages/og-image/[slug].png.ts`.
-  - You can also create your own og images and skip satori generating if for you by adding an ogImage property in the frontmatter with a link to the asset, an example can be found in `src/content/post/social-image.md`. More info on frontmatter can be found [here](#frontmatter)
-- Optional:
-  - Fonts: This theme sets the body element to the font family `font-mono`, located in the global css file `src/styles/global.css`. You can change fonts by removing the variant `font-mono`, after which TailwindCSS will default to the `font-sans` [font family stack](https://tailwindcss.com/docs/font-family).
-
-## Adding posts
-
-This theme utilises [Content Collections](https://docs.astro.build/en/guides/content-collections/) to organise Markdown and/or MDX files, as well as type-checking frontmatter with a schema -> `src/content/config.ts`.
-
-Adding a post is a simple as adding your .md(x) file(s) to the `src/content/post` folder, the filename of which will be used as the slug/url. The two posts included with this template are there as an example of how to structure your frontmatter. Additionally, the [Astro docs](https://docs.astro.build/en/guides/markdown-content/) has a detailed section on markdown pages.
-
-### Frontmatter
-
-| Property (\* required) | Description                                                                                                                                                                                                                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| title \*               | Self explanatory. Used as the text link to the post, the h1 on the posts' page, and the pages title property. Has a max length of 60 chars, set in `src/content/config.ts`                                                                                                                        |
-| description \*         | Similar to above, used as the seo description property. Has a min length of 50 and a max length of 160 chars, set in the post schema.                                                                                                                                                             |
-| publishDate \*         | Again pretty simple. To change the date format/locale, currently **en-GB**, update/pass the **locale** arg to function **getFormattedDate**, found in `src/utils/date.ts`.                                                                                                                        |
-| tags                   | Tags are optional with any created post. Any new tag(s) will be shown in `yourdomain.com/posts` + `yourdomain.com/tags`, and generate the page(s) `yourdomain.com/tags/[yourTag]`                                                                                                                 |
-| coverImage             | This is an optional object that will add a cover image to the top of a post. Include both a `src`: "_path-to-image_" and `alt`: "_image alt_". You can view an example in `src/content/post/cover-image.md`                                                                                       |
-| ogImage                | This is an optional property. An OG Image will be generated automatically for every post where this property **isn't** provided. If you would like to create your own for a specific post, include this property and a link to your image, the theme will then skip automatically generating one. |
-
-## Pagefind search
-
-This integration brings a static search feature for searching blog posts. In its current form, pagefind only works once the site has been built. This theme adds a postbuild script that should be run after Astro has built the site. You can preview locally by running both build && postbuild.
-
-Search results only includes blog posts. If you would like to include other/all your pages, remove/re-locate the attribute `data-pagefind-body` to the article tag found in `src/layouts/BlogPost.astro`.
-
-It also allows you to filter posts by tags added in the frontmatter of blog posts. If you would rather remove this, remove the data attribute `data-pagefind-filter="tag"` from the link in `src/components/blog/Hero.astro`.
-
-Note the current build will display a warning in the console, you can follow this issue [here](https://github.com/CloudCannon/pagefind/issues/290)
-
-If you would rather not include this integration, simply remove the component `src/components/Search.astro`, and uninstall both `@pagefind/default-ui` & `pagefind` from package.json. You will also need to remove the postbuild script from here as well.
-
-## Deploy
-
-[Astro docs](https://docs.astro.build/en/guides/deploy/) has a great section and breakdown of how to deploy your own Astro site on various platforms and their idiosyncrasies.
-
-By default the site will be built (see [Commands](#commands) section above) to a `/dist` directory.
+all set up out of the box! legend
 
 ## License
 
