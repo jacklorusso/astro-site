@@ -1,6 +1,8 @@
-# jacklorusso.com, built with Astro
+# jacklorusso.com
 
-the latest incarnation of my personal site/blog
+the latest incarnation of my personal site/blog, built with Astro
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b934eeed-3e5a-4a87-8a24-1cd511f5321f/deploy-status)](https://app.netlify.com/sites/jacklorusso/deploys)
 
 ## recognition 🫡
 
