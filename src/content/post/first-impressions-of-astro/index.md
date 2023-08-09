@@ -9,13 +9,13 @@ I didn't immediately jump aboard when I first came across the [Astro](https://as
 
 ## Other options I (briefly) considered
 
-Proffesionally, I've mostly been using Gatsby and a bit of Next.js when building websites in recent years. So why didn't I use them?
+Proffessionally, I've mostly been using Gatsby and a bit of Next.js when building websites in recent years. So why didn't I use them for this site?
 
 ### Gatsby
 
-[atlassian.design](https://atlassian.design/), our documentation site for the Atlassian Design System, is a Gatsby site. The old _old_ version of this site was a Gatsby jam — you can still reach a stripped-down version at this [Netlify url](https://jl-gatsby.netlify.app/). Even the travel blog I built for my girlfriend back in 2018 — [ninetyninedays.com.au](https://www.ninetyninedays.com.au/) — is also Gatsby under the hood. I've been there, and I've done that.
+I've worked on a lot of Gatsby sites. [atlassian.design](https://atlassian.design/), our documentation site for the Atlassian Design System, is a Gatsby site. The old _old_ version of this site was a Gatsby jam — you can still reach a stripped-down version at this [Netlify url](https://jl-gatsby.netlify.app/). Even the travel blog I built for my girlfriend back in 2018 — [ninetyninedays.com.au](https://www.ninetyninedays.com.au/) — is also Gatsby under the hood. I've been there, and I've done that.
 
-Look, Gatsby is fine. I'm not a total hater. I do think it is overkill for most sites _unless_ you're sourcing data from many different places — the GraphQL data layer doesn't really shine until it's reducing a whole bunch of glue code. There is a complexity inflection point that you need to reach before Gatsby is really working hard for you. If you're just dealing with some markdown files, it's a little over the top. Add in a headless CMS as an additional data source, plus another feed coming from somewhere else. and you might be close to getting bang for your buck, but even then... After working on around 6 Gatsby sites, I feel like the time you think you'll save with the unified GraphQL data layer, you just end up spending in different ways.
+Look, Gatsby is fine. I'm not a total hater. I do think it is overkill for most sites _unless_ you're sourcing data from many different places — the GraphQL data layer doesn't really shine until it's reducing a whole bunch of glue code. There is a complexity inflection point that you need to reach before Gatsby is really working hard for you. If you're just dealing with some markdown files, it's a little over the top. Add in a headless CMS as an additional data source, plus another feed coming from somewhere else, and you might be close to getting bang for your buck, but even then... After working on around 6 Gatsby sites, I feel like the time you think you'll save with the unified GraphQL data layer, you just end up spending in different ways.
 
 ### Next.js
 
@@ -36,13 +36,13 @@ npx @11ty/eleventy
 
 ## If you love Eleventy so much why don't you marry it?
 
-The real answer for why I didn't use Eleventy for this site is because curiousity got the best of me and I had to try the new shiny thing.
+The real answer for why I didn't use Eleventy for this site is because curiosity got the best of me and I had to try the new shiny thing.
 
-But also, Astro _is_ spiritually very similar to Eleventy. It makes a lot of the same tradeoffs, and I'm pleasantly surprised that after using it for the first time, I actually like it even more!
+But also, Astro _is_ spiritually very similar to Eleventy. It makes a lot of the same tradeoffs. I'm pleasantly surprised that after using it for the first time, I actually like it even more!
 
 ## I'm a convert
 
-I find the more opinionated design decisions to be refreshing, and they gel with me. I really like `.astro` files as they remind me of all the best parts of working with Vue (a minimal `.astro` file is just HTML — you can layer in scoped CSS and sprinkle JS as needed from there) _and_ React (JSX-like expressions), the two web frameworks I have the most experience in. It just fits my preferences really well, and the project structure similarly fits like a glove with my mental models. I felt I was moving faster with Astro as a result.
+I find the more opinionated design decisions to be refreshing, and they gel with me. I really like `.astro` files as they remind me of all the best parts of working with Vue (a minimal `.astro` file is just HTML — you can layer in scoped CSS and sprinkle JS as needed from there) _and_ React (JSX-like expressions), the two libraries/frameworks I have the most experience in. It just fits my preferences really well, and the project structure similarly fits like a glove with my mental models. I felt I was moving faster with Astro as a result.
 
 That said though, that's just what works for me — if you look at an `.astro` file and you aren't into it (have a look at [this guide](https://docs.astro.build/en/core-concepts/astro-syntax/) to get an idea) or you'd just rather use a different templating language, stop right there, turn around, and use Eleventy with your preferred tech. I don't think you'll be disappointed.
 
