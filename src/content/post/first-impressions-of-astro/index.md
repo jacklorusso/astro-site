@@ -2,7 +2,7 @@
 title: "First impressions of Astro"
 description: "This website is built with Astro. TL;DR — I'm now a big fan!"
 publishDate: "9 Aug 2023"
-tags: ["astro", "dev"]
+tags: ["web", "dev", "astro", "gatsby", "nextjs", "eleventy"]
 ---
 
 I didn't immediately jump aboard when I first came across the [Astro](https://astro.build) hype train. Another framework / static site generator (SSG)? Sure. Cool, I guess. But when inspiration struck and I was rebuilding jacklorusso.com on an impulse, I decided to give it a go.
@@ -42,13 +42,13 @@ The real answer for why I didn't use Eleventy for this site is because curiosity
 
 But also, Astro _is_ spiritually very similar to Eleventy. It makes a lot of the same tradeoffs. I'm pleasantly surprised that after using it for the first time, I actually like it even more!
 
-## I'm a convert
+## Now Astro is my best friend 🤝
 
 I find the more opinionated design decisions to be refreshing, and they gel with me. I really like `.astro` files as they remind me of all the best parts of working with Vue (a minimal `.astro` file is just HTML — you can layer in scoped CSS and sprinkle JS as needed from there) _and_ React (JSX-like expressions), the two libraries/frameworks I have the most experience in. It just fits my preferences really well, and the project structure similarly fits like a glove with my mental models. I felt I was moving faster with Astro as a result.
 
 That said though, that's just what works for me — if you look at an `.astro` file and you aren't into it (have a look at [this guide](https://docs.astro.build/en/core-concepts/astro-syntax/) to get an idea) or you'd just rather use a different templating language, stop right there, turn around, and use Eleventy with your preferred tech. I don't think you'll be disappointed.
 
-The Astro docs and community do feel a bit more polished and user-friendly, which goes a really long way (never underestimate good design). I ended up starting with a really great theme — [chrismwilliams/astro-theme-cactus](https://github.com/chrismwilliams/astro-theme-cactus) — which was nice to get over that 'blank page' feeling. It's packed full of useful features such as a neat little search lib called [Pagefind](https://pagefind.app/) and Vercel's [Satori](https://github.com/vercel/satori) lib for generating Open Graph images and social cards (I still haven't played around with this yet though). These are little 'nice-to-haves' that I probably wouldn't have bothered with myself, but since they're there already, why not! It also uses [Tailwind](https://tailwindcss.com/) which I definitely _would_ have bothered with myself. I'm a big fan of utility-first CSS in my personal projects because it helps me to 'design in the browser', fast.
+The Astro docs and community do feel a bit more polished and user-friendly, which goes a really long way (never underestimate good design). I ended up starting with a really great theme — [chrismwilliams/astro-theme-cactus](https://github.com/chrismwilliams/astro-theme-cactus) — which was nice to get over that 'blank page' feeling. It's packed full of useful features such as a neat little search lib called [Pagefind](https://pagefind.app/) and Vercel's [Satori](https://github.com/vercel/satori) lib for generating Open Graph images and social cards. These are little 'nice-to-haves' that I probably wouldn't have bothered with myself, but since they're there already, why not! It also uses [Tailwind](https://tailwindcss.com/) which I definitely _would_ have bothered with myself. I'm a big fan of utility-first CSS in my personal projects because it helps me to 'design in the browser', fast.
 
 So I spent a little time making the theme my own, changing things here and there... Look at me now. I have a new site, I really like the tech I'm using, [pnpm](https://pnpm.io/) + [Astro](https://astro.build/) combine for a super fast dev loop and build times, and a Chrome Lighthouse audit shows straight 100s. Let's go!
 

@@ -9,11 +9,11 @@ import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
 const AssetDir = resolve("src", "assets");
-const RobotoMonoPath = join(AssetDir, "roboto-mono-regular.ttf");
-const RobotoMonoBoldPath = join(AssetDir, "roboto-mono-700.ttf");
+const InterRegularPath = join(AssetDir, "Inter-Regular.ttf");
+const InterSemiBoldPath = join(AssetDir, "Inter-SemiBold.ttf");
 
-const RobotoMonoReg = readFileSync(RobotoMonoPath);
-const RobotoMonoBold = readFileSync(RobotoMonoBoldPath);
+const InterRegular = readFileSync(InterRegularPath);
+const InterSemiBold = readFileSync(InterSemiBoldPath);
 
 const ogOptions: SatoriOptions = {
 	width: 1200,
@@ -21,14 +21,14 @@ const ogOptions: SatoriOptions = {
 	// debug: true,
 	fonts: [
 		{
-			name: "Roboto Mono",
-			data: RobotoMonoReg,
+			name: "Inter",
+			data: InterRegular,
 			weight: 400,
 			style: "normal",
 		},
 		{
-			name: "Roboto Mono",
-			data: RobotoMonoBold,
+			name: "Inter",
+			data: InterSemiBold,
 			weight: 700,
 			style: "normal",
 		},
@@ -36,42 +36,26 @@ const ogOptions: SatoriOptions = {
 };
 
 const markup = (title: string, pubDate: string) => html`<div
-	tw="flex flex-col w-full h-full bg-[#1d1f21] text-[#c9cacc]"
+	tw="flex flex-col w-full h-full bg-[#000000] text-[#c9cacc]"
 >
-	<div tw="flex flex-col flex-1 w-full p-10 justify-center">
-		<p tw="text-2xl mb-6">${pubDate}</p>
-		<h1 tw="text-6xl font-bold leading-snug text-white">${title}</h1>
-	</div>
-	<div
-		tw="flex items-center justify-between w-full p-10 border-t border-[#2bbc89] text-xl"
-	>
-		<div tw="flex items-center">
-			<svg
-				height="60"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 272 480"
-			>
+	<div tw="flex flex-col flex-1 ml-32 mr-32 pt-12 pb-12 justify-center">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="48"
+			viewBox="0 0 506 331"
+			class="mb-8"
+		>
+			<g fill="none" fill-rule="evenodd">
+				<circle cx="165.5" cy="165.5" r="165.5" fill="#EF3085"></circle>
+				<circle cx="340.5" cy="165.5" r="165.5" fill="#34B6DD"></circle>
 				<path
-					d="M181.334 93.333v-40L226.667 80v40l-45.333-26.667ZM136.001 53.333 90.667 26.667v426.666L136.001 480V53.333Z"
-					fill="#B04304"
+					fill="#42458A"
+					d="M253,25.2187885 C299.847155,54.5054142 331,106.481298 331,165.718784 C331,224.95627 299.847155,276.932153 253,306.218779 C206.152852,276.932164 175,224.956276 175,165.718784 C175,106.481291 206.152852,54.5054029 253.000015,25.2187789 Z"
 				></path>
-				<path
-					d="m136.001 119.944 45.333-26.667 45.333 26.667-45.333 26.667-45.333-26.667ZM90.667 26.667 136.001 0l45.333 26.667-45.333 26.666-45.334-26.666ZM181.334 53.277l45.333-26.666L272 53.277l-45.333 26.667-45.333-26.667ZM0 213.277l45.333-26.667 45.334 26.667-45.334 26.667L0 213.277ZM136 239.944l-45.333-26.667v53.333L136 239.944Z"
-					fill="#FF5D01"
-				></path>
-				<path
-					d="m136 53.333 45.333-26.666v120L226.667 120V80L272 53.333V160l-90.667 53.333v240L136 480V306.667L45.334 360V240l45.333-26.667v53.334L136 240V53.333Z"
-					fill="#53C68C"
-				></path>
-				<path
-					d="M45.334 240 0 213.334v120L45.334 360V240Z"
-					fill="#B04304"
-				></path>
-			</svg>
-			<p tw="ml-3 font-semibold">${siteConfig.title}</p>
-		</div>
-		<p>by ${siteConfig.author}</p>
+			</g>
+		</svg>
+		<h1 tw="text-6xl font-bold leading-tight text-white mb-4">${title}</h1>
+		<p tw="text-2xl leading-none">${siteConfig.title} — ${pubDate}</p>
 	</div>
 </div>`;
 
