@@ -11,7 +11,7 @@ TL;DR — I'm really happy with how it's turned out! Would recommend.
 
 ## Other options I (briefly) considered
 
-Proffessionally, I've mostly been using Gatsby and a bit of Next.js when building websites in recent years. So why didn't I use them for this site?
+Professionally, I've mostly been using Gatsby and a bit of Next.js when building websites in recent years. So why didn't I use them for this site?
 
 ### Gatsby
 
