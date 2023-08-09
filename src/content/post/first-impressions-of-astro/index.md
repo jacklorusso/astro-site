@@ -36,9 +36,9 @@ npx @11ty/eleventy
 
 ## If you love Eleventy so much why don't you marry it?
 
-The real answer is because curiousity got the best of me and I had to try the new shiny thing.
+The real answer for why I didn't use Eleventy for this site is because curiousity got the best of me and I had to try the new shiny thing.
 
-But also, Astro _is_ spiritually very similar to Eleventy. It makes a lot of the same tradeoffs. I'm pleasantly surprised that after using it for the first time, I actually like it even more!
+But also, Astro _is_ spiritually very similar to Eleventy. It makes a lot of the same tradeoffs, and I'm pleasantly surprised that after using it for the first time, I actually like it even more!
 
 ## I'm a convert
 
