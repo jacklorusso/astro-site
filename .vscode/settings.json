@@ -16,5 +16,6 @@
 		"astro", // Enable .astro
 		"typescript", // Enable .ts
 		"typescriptreact"
-	]
+	],
+	"cSpell.language": "en,en-AU"
 }
