@@ -37,9 +37,7 @@ const { headings } = await post.render();
 	observer.observe(targetHeader);
 </script>
 
-<BaseLayout
-	meta={{ title, description, articleDate, ogImage: socialImage }}
->
+<BaseLayout meta={{ title, description, articleDate, ogImage: socialImage }}>
 	<div class="gap-x-10 lg:flex lg:items-start">
 		{
 			!!headings.length && (
@@ -67,10 +65,21 @@ const { headings } = await post.render();
 		<article class="flex-grow break-words" data-pagefind-body>
 			<div id="blog-hero"><BlogHero content={post} /></div>
 			<div
-				class="prose prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ms-5 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+				class="prose prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ms-5 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-a:font-normal prose-th:before:content-none"
 			>
 				<slot />
 			</div>
+
+			<hr class="mb-8 mt-12" />
+			<p class="italic">
+				You can subscribe to this site via <a href="/rss.xml">RSS feed</a> if you
+				like!
+			</p>
+			<p class="mb-6 italic">
+				PS. If you're not sure what that is, this is a good site to learn more <a
+					href="https://aboutfeeds.com/">about feeds</a
+				>
+			</p>
 		</article>
 	</div>
 	<button

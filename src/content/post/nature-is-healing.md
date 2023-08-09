@@ -9,7 +9,7 @@ For the first few years after I started making things for the web, I was captiva
 
 Then the pandemic happened. All of a sudden I couldn't think of anything worse than closing my work machine at the end of a long day and opening my personal lappy a few hours later to mess around on a side project.
 
-But this past weekend, for the first time in a very long time, I felt like coding outside of work. True to form, I rebuilt jacklorusso.com for the hundredth time.
+But this past weekend, for the first time in a long time, I felt like coding outside of work. True to form, I rebuilt jacklorusso.com for the hundredth time.
 
 We are _**so**_ back!
 

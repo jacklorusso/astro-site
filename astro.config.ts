@@ -7,28 +7,33 @@ import remarkUnwrapImages from "remark-unwrap-images";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://jacklorusso.com/",
-  markdown: {
-    remarkPlugins: [remarkUnwrapImages],
-    shikiConfig: {
-      theme: "github-dark",
-      wrap: true
-    }
-  },
-  experimental: {
-    assets: true
-  },
-  image: {
-    // https://docs.astro.build/en/guides/assets/#using-sharp
-    service: sharpImageService()
-  },
-  integrations: [mdx({}), tailwind({
-    applyBaseStyles: false
-  }), sitemap(), prefetch()],
-  compressHTML: true,
-  vite: {
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"]
-    }
-  }
+	site: "https://jacklorusso.com/",
+	markdown: {
+		remarkPlugins: [remarkUnwrapImages],
+		shikiConfig: {
+			theme: "github-dark",
+			wrap: true,
+		},
+	},
+	experimental: {
+		assets: true,
+	},
+	image: {
+		// https://docs.astro.build/en/guides/assets/#using-sharp
+		service: sharpImageService(),
+	},
+	integrations: [
+		mdx({}),
+		tailwind({
+			applyBaseStyles: false,
+		}),
+		sitemap(),
+		prefetch(),
+	],
+	compressHTML: true,
+	vite: {
+		optimizeDeps: {
+			exclude: ["@resvg/resvg-js"],
+		},
+	},
 });

@@ -53,7 +53,7 @@ const paginationProps = {
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-6 flex items-center">
-		<a href="/tags/" class="text-accent sm:hover:underline">Tags</a>
+		<a href="/tags/">Tags</a>
 		<span class="me-3 ms-2">/</span>
 		<span>#{tag}</span>
 	</h1>
@@ -61,7 +61,7 @@ const paginationProps = {
 		<ul class="space-y-8">
 			{
 				page.data.map((p) => (
-					<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_q]:basis-full">
+					<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_p]:basis-full">
 						<PostPreview post={p} as="h2" withDesc />
 					</li>
 				))
