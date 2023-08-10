@@ -21,7 +21,7 @@ Look, Gatsby is fine. I'm not a total hater. I do think it is overkill for most 
 
 ### Next.js
 
-As for Next.js, it's great and I don't have anything really bad to say about it, except that it's probably just a bit much for a simple static site. It handles building full-stack web apps remarkably well and just keeps on getting better and better. Next.js is great in that it handles SSG well _on top of_ everything else it does, but if you _only_ need the SSG part, I think there are better options out there.
+As for Next.js, it's great and I don't have anything really bad to say about it, except that it's probably just a bit much for a simple static site. It handles building full-stack web apps remarkably well and just keeps on getting better and better. Next.js is cool in that it handles SSG well _on top of_ everything else it does, but if you _only_ need the SSG part, I think there are better options out there.
 
 Ultimately, for content-first websites I've become a "reject modernity, embrace tradition" guy. I want to avoid SPAs (single page applications), and roll with the old school multi-page architecture instead (is this really what we're calling it now?) Tools that embrace this as a core design decision are therefore most aligned with my goals. Which brings me to...
 
