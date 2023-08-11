@@ -31,4 +31,6 @@ I know myself. I know I could spend hours and hours messing around with typograp
 
 In any case, I'm not sure exactly what I will do or say with this site, and for that reason, I'm not actually _ready_ to design it properly yet. As all good designers know, you can't beat designing around real content. Kill lorem ipsum!
 
-This website is basically feature complete already due to starting with a [template](https://github.com/chrismwilliams/astro-theme-cactus) (more on that in the next post). So, the tech is out of the way. Now I just need to write.
+This website is basically feature complete already due to starting with a [template](https://github.com/chrismwilliams/astro-theme-cactus) (more on that in the [next post](/posts/first-impressions-of-astro)).
+
+So, the tech is out of the way. Now I just need to write.
