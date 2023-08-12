@@ -2,7 +2,7 @@
 title: "First impressions of Astro"
 description: "This website is built with Astro. TL;DR — I'm now a big fan!"
 publishDate: "9 Aug 2023"
-tags: ["web", "dev", "astro", "gatsby", "nextjs", "eleventy"]
+tags: ["dev", "astro", "gatsby", "nextjs", "eleventy"]
 ---
 
 I didn't immediately jump aboard when I first came across the [Astro](https://astro.build) hype train. Another framework / static site generator (SSG)? Sure. Cool, I guess. But when inspiration struck and I was rebuilding jacklorusso.com on an impulse, I decided to give it a go.
