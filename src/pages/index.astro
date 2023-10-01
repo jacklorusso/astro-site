@@ -11,8 +11,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const now: Array<{ title: string; desc: string; href?: string }> = [
 	{
 		title: "Reading",
-		desc: "Love & Virtue — Diana Reid",
-		href: "https://www.goodreads.com/book/show/57768107-love-virtue"
+		desc: "The Creative Act: A Way of Being — Rick Rubin",
+		href: "https://www.goodreads.com/book/show/60965426-the-creative-act",
 	},
 	{
 		title: "Listening to",
@@ -20,9 +20,8 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
 		href: "https://spotify.link/dh9a9WlFqDbsi=db9a67d31d204be8",
 	},
 	{
-		title: "Working on",
-		desc: "This site!",
-		href: "https://github.com/jacklorusso/astro-site",
+		title: "Watching",
+		desc: "Ahsoka — Disney+",
 	},
 ];
 ---
@@ -63,17 +62,19 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
 							{title}:
 						</p>
 
-{
-					href ? 	<a
-							href={href}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="underline"
-						>
-							{desc}
-						</a>
-					: <span>{desc}</span>
-}</li> 
+						{href ? (
+							<a
+								href={href}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="underline"
+							>
+								{desc}
+							</a>
+						) : (
+							<span>{desc}</span>
+						)}
+					</li>
 				))
 			}
 		</ul>

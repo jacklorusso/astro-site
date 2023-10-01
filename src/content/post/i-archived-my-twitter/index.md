@@ -1,6 +1,6 @@
 ---
 title: "I archived my Twitter"
-description: "10 years of my tweets now live at twitter.jacklorusso.com thanks to Tweetback"
+description: "10 years of my tweets now live at twitter.jacklorusso.com thanks to Tweetback."
 publishDate: "12 Aug 2023"
 tags: ["twitter", "social media", "dev", "tweetback", "eleventy"]
 ---
