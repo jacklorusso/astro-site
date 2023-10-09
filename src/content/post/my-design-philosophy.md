@@ -5,7 +5,7 @@ publishDate: "10 Oct 2023"
 tags: ["web", "design", "dev", "philosophy"]
 ---
 
-Recently I've been thinking about my design philosophy. How it's evolved over the years, and what has stayed the same. Where it is similar or different to my colleagues. What articles or books I return to over and over again, and like to share with people.
+Recently I've been thinking about my design philosophy. How it's evolved over the years, and what has stayed the same. Where it is similar or different to my colleagues. Which articles or books I return to over and over again, and like to share with people.
 
 I've tried and failed a couple of times to write a more detailed and personal (read: indulgent) version of this post, but I can never get over the hump and just get the damn post out, so I'm shipping this instead.
 
