@@ -13,9 +13,9 @@ I've tried and failed a couple of times to write a more detailed and personal (r
 - Development is design.
 - Make space to vibe and have fun together (not just spar and critique).
 
-Maybe I'll expand on these points a bit more in a later post, but you know what — I like how this little blog has turned out.
+Maybe I'll expand on these points a bit more in a later post, but you know what... I like how this little blog has turned out.
 
-For now I'll leave you with some links to pieces that deeply influenced me and how I build for the web.
+Here are some pieces that deeply influenced me and how I build for the web.
 
 ## My own recommended reading list
 
@@ -30,11 +30,9 @@ What a name for a site. [Zach Leatherman](https://www.zachleat.com/web/esif/) ha
 
 I was pleased to see that I'd read (and re-read) _most_ of these. Most of the posts on that site are evergreen — as relevant and as educational as they ever were — but they're also products of their time.
 
-For many of the posts that came from 2015 onwards I read them around were published, which does help to understand their context and impact.
+For many of the posts that came from 2015 onwards I read them around when they were published, which does help to understand their context and impact.
 
 For everything that came before ~2015, I was lucky enough to have [Mark Rickerby](https://maetl.net) as a mentor early enough in my career. I honestly think he shared pretty much every single one of the 2000s and early 2010's links on that site with me. As always, thanks for everything Mark.
-
-One closing thought:
 
 ## We do our best work when we accept what the web is
 
