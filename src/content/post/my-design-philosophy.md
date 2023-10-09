@@ -1,37 +1,42 @@
 ---
 title: "My design philosophy"
-description: "How I like to build for the web"
-publishDate: "6 Oct 2023"
+description: "This post is barely more than a few bullet points and some links. Maybe that is fitting."
+publishDate: "10 Oct 2023"
 tags: ["web", "design", "dev", "philosophy"]
 draft: true
 ---
 
-Recently I've been thinking about my design philosophy.
+Recently I've been thinking about my design philosophy. How it's evolved over the years, and what has stayed the same. Where it is similar or different to my colleagues. What articles or books I return to over and over again, and like to share with people.
 
-It might sound grandiose at first, but I believe we all have one, whether it is consciously constructed and employed or not. These philosophies influence how we plan and execute our own work, but also how we collaborate with others. When you have strong philosophical alignment with your team mates, building things together can feel almost effortless and it's very fun. On the other hand, deep philosophical differences between collaborators makes it difficult to get into a flow together. I think it's a good thing to be aware of the foundational beliefs you hold close in your own practice, so you can have fruitful conversations, set expectations, learn from others, teach others, and ideally get to that happy place where everyone is harmonising and enjoying the journey together.
+I've tried and failed a couple of times to write a more detailed and personal (read: indulgent) version of this post, but I can never get over the hump and just get the damn post out, so I'm shipping this instead.
 
-Four years ago I did a talk at Sydney's Design System Meetup called "One foot in both camps" where I shared my experience navigating a career as a design/dev hybrid, some thoughts on what makes a healthy team, and how we should think about the role of engineering in the design process. You can [view it on Vimeo](https://vimeo.com/358956867) if you like.
+- **Understand the medium you work in.**
+- **Treat development as design.**
+- **Make space to vibe and have fun together (not just spar and critique).**
 
-I found it encouraging to watch it back and realise that while many things have changed — I'm rocking a shaved head now instead of that long flowing hair, for one thing — there are some things that have proven to be true time and time again throughout my career.
+Maybe one day I'll expand on these points in future writing, but you know what — I like how this little blog has turned out.
 
-Here are a few pillars of my design philosophy:
+For now I'll leave you with some links to pieces that deeply influenced me and how I build for the web.
 
-## Understand your medium
+## My own recommended reading list
 
-To re-use a tortured analogy, imagine being an architect or a builder and having very little idea about the physical materials and tools you are trying to use to design and build your projects. It's preposterous to think you could get very far in your career.
+- [A Dao of Web Design](https://alistapart.com/article/dao/) — John Allsopp (2000)
+- [What Screens Want](https://frankchimero.com/blog/2013/what-screens-want/) — Frank Chimero (2013)
+- [The Web’s Grain](https://frankchimero.com/blog/2015/the-webs-grain/) — Frank Chimero (2015)
+- [Atomic Design](https://atomicdesign.bradfrost.com) — Brad Frost (2016)
 
-You can't design well for the web without at least trying to understand it. Of course, no-one ever attains complete mastery over all there is to possibly know about building for the web — the landscape is constantly moving and evolving — but you must attempt
+## Educational Sensational Inspirational Foundational
 
-## Development is design
+What a name for a site. [Zach Leatherman](https://www.zachleat.com/web/esif/) has put together a "historical record of foundational web development blog posts" here at [esif.dev](https://esif.dev). It's a fantastic list — the motherlode.
 
-## Make space to jam and just vibe
+I was pleased to see that I'd read (and re-read) _most_ of these. Most of the posts on that site are evergreen — as relevant and as educational as they ever were — but they're also products of their time.
 
-- design is a team sport
-- Embodied cognition
-- have fun
+For many of the posts that came from 2015 onwards I read them around the time they came out, which does help to understand their impact.
 
-## Recommended reading list
+For everything that came before ~2015, I was lucky enough to have [Mark Rickerby](https://maetl.net) as a mentor early enough in my career. I honestly think he shared pretty much every single one of the 2000s and early 2010's links on that site with me. As always, thanks for everything Mark.
 
-- Dao of Web
-- Grain of the Web
-- Atomic Design
+One closing thought:
+
+## We do our best work when we understand and accept what the web is
+
+... and we do it better together.
