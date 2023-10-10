@@ -15,7 +15,7 @@ I've tried and failed a couple of times to write a more detailed and personal (r
 
 Maybe I'll expand on these points a bit more in a later post, but you know what... I like how this little blog has turned out.
 
-## My own recommended reading list
+## My recommended reading list
 
 Here are some pieces that deeply influenced me and how I build for the web:
 
