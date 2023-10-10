@@ -15,9 +15,9 @@ I've tried and failed a couple of times to write a more detailed and personal (r
 
 Maybe I'll expand on these points a bit more in a later post, but you know what... I like how this little blog has turned out.
 
-Here are some pieces that deeply influenced me and how I build for the web.
-
 ## My own recommended reading list
+
+Here are some pieces that deeply influenced me and how I build for the web:
 
 - [A Dao of Web Design](https://alistapart.com/article/dao/) — John Allsopp (2000)
 - [What Screens Want](https://frankchimero.com/blog/2013/what-screens-want/) — Frank Chimero (2013)
