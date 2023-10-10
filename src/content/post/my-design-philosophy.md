@@ -24,7 +24,7 @@ Here are some pieces that deeply influenced me and how I build for the web:
 - [The Web’s Grain](https://frankchimero.com/blog/2015/the-webs-grain/) — Frank Chimero (2015)
 - [Atomic Design](https://atomicdesign.bradfrost.com) — Brad Frost (2016)
 
-## Educational Sensational Inspirational Foundational
+## Educational Sensational Inspirational Foundational reading list
 
 What a name for a site. [Zach Leatherman](https://www.zachleat.com/web/esif/) has put together a "historical record of foundational web development blog posts" at [esif.dev](https://esif.dev). It's a fantastic list. The motherlode.
 
@@ -34,6 +34,6 @@ For many of the posts that came from 2015 onwards I read them around when they w
 
 For everything that came before ~2015, I was lucky enough to have [Mark Rickerby](https://maetl.net) as a mentor early enough in my career. I honestly think he shared pretty much every single one of the 2000s and early 2010's links on that site with me. As always, thanks for everything Mark.
 
-## We do our best work when we accept what the web is
+## We do our best work when we understand and accept what the web is
 
 ... and we do it better together.
