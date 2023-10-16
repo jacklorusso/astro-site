@@ -15,9 +15,6 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	experimental: {
-		assets: true,
-	},
 	image: {
 		// https://docs.astro.build/en/guides/assets/#using-sharp
 		service: sharpImageService(),
@@ -30,7 +27,6 @@ export default defineConfig({
 		sitemap(),
 		prefetch(),
 	],
-	compressHTML: true,
 	vite: {
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],

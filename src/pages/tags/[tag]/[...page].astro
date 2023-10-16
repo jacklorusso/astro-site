@@ -12,7 +12,7 @@ export const getStaticPaths = (async ({ paginate }) => {
 	const allPostsByDate = sortMDByDate(allPosts);
 	const uniqueTags = getUniqueTags(allPostsByDate);
 
-	return uniqueTags.map((tag) => {
+	return uniqueTags.flatMap((tag) => {
 		const filterPosts = allPostsByDate.filter((post) =>
 			post.data.tags?.includes(tag)
 		);

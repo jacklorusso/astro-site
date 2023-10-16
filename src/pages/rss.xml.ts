@@ -5,7 +5,7 @@ import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 const parser = new MarkdownIt();
 
-export const get = async () => {
+export const GET = async () => {
 	const posts = await getCollection("post", ({ data }) => !data.draft);
 
 	return rss({

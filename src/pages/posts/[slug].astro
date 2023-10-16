@@ -5,7 +5,7 @@ import PostLayout from "@/layouts/BlogPost";
 
 export const getStaticPaths = (async () => {
 	const blogEntries = await getCollection("post", ({ data }) => !data.draft);
-	return blogEntries.map((entry) => ({
+	return blogEntries.flatMap((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },
 	}));

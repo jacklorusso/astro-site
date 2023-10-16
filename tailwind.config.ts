@@ -45,7 +45,7 @@ export default {
 						"--tw-prose-links": "var(--theme-text)",
 						"--tw-prose-bold": "var(--theme-text)",
 						"--tw-prose-bullets": "var(--theme-text)",
-						"--tw-prose-quotes": "var(--theme-quote)",
+						"--tw-prose-quotes": "var(--theme-text)",
 						"--tw-prose-code": "var(--theme-text)",
 						"--tw-prose-hr": "0.5px dashed #666",
 						"--tw-prose-th-borders": "#666",
@@ -63,9 +63,6 @@ export default {
 							border: "1px dotted #666",
 							borderRadius: "2px",
 						},
-						blockquote: {
-							borderLeftWidth: "none",
-						},
 						hr: {
 							borderTopStyle: "dashed",
 						},
@@ -81,7 +78,7 @@ export default {
 						},
 						tfoot: {
 							borderTop: "1px dashed #666",
-						},
+						}
 					},
 				},
 				sm: {

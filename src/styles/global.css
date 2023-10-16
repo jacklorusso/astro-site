@@ -25,6 +25,7 @@
 
 	html {
 		@apply h-full scroll-smooth;
+		text-wrap: pretty;
 	}
 
 	html body {
@@ -33,6 +34,10 @@
 
 	a {
 		@apply underline hover:text-link;
+	}
+
+	blockquote {
+		@apply border-s-2 border-accent font-light text-lg !important;
 	}
 }
 
