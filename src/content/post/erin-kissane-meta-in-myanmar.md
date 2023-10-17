@@ -11,7 +11,7 @@ tags: ["reco", "read"]
 >
 > What I learned in the process was so starkly awful that I finally set the whole series aside for a while until I could do a lot more reading and write something more substantial. Nearly three months later, I’m ready to share my notes.
 
-They're long reads, but they're worth your time.
+They're long reads, and considering the subject matter it can be rough going, but they're worth your time.
 
 ## Links
 
