@@ -16,7 +16,7 @@ const meta = {
 	<h1 class="title mb-6">Tags</h1>
 	<ul class="space-y-4">
 		{
-			Object.entries(allTags).map(([tag, val]) => (
+			Object.entries(allTags).sort(([,a],[,b]) => b-a).map(([tag, val]) => (
 				<li class="flex items-center gap-x-2">
 					<a
 						class="inline-block underline"
