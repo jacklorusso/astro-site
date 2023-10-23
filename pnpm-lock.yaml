@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/rss':
     specifier: ^3.0.0
     version: 3.0.0
+  '@philnash/astro-pagination':
+    specifier: ^0.3.0
+    version: 0.3.0(astro@3.3.0)
   astro:
     specifier: 3.3.0
     version: 3.3.0(typescript@5.2.2)
@@ -58,9 +61,6 @@ devDependencies:
   '@types/eslint':
     specifier: ^8.44.4
     version: 8.44.4
-  '@types/prettier':
-    specifier: ^3.0.0
-    version: 3.0.0
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.7.5
     version: 6.7.5(@typescript-eslint/parser@6.7.5)(eslint@8.51.0)(typescript@5.2.2)
@@ -984,6 +984,14 @@ packages:
     dev: true
     optional: true
 
+  /@philnash/astro-pagination@0.3.0(astro@3.3.0):
+    resolution: {integrity: sha512-+z3H944hZm6zKWKkhCFhAsq+Z6rarbLIAUAN0DJ8gL3y9H1Lpz54M0pbVQ+Cq17iDAeYXlE49lQLzU6K+Wxpgg==}
+    peerDependencies:
+      astro: ^2.3.0 || ^3.0.0
+    dependencies:
+      astro: 3.3.0(typescript@5.2.2)
+    dev: false
+
   /@pkgr/utils@2.4.2:
     resolution: {integrity: sha512-POgTXhjrTfbTV63DiFXav4lBHiICLKKwDeaKn9Nphwj7WH6m0hMMCaJkMyRWjgtPFyRKRVoMXXjczsTQRDEhYw==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
@@ -1249,13 +1257,6 @@ packages:
 
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
-
-  /@types/prettier@3.0.0:
-    resolution: {integrity: sha512-mFMBfMOz8QxhYVbuINtswBp9VL2b4Y0QqYHwqLz3YbgtfAcat2Dl6Y1o4e22S/OVE6Ebl9m7wWiMT2lSbAs1wA==}
-    deprecated: This is a stub types definition. prettier provides its own type definitions, so you do not need this installed.
-    dependencies:
-      prettier: 3.0.3
-    dev: true
 
   /@types/sax@1.2.5:
     resolution: {integrity: sha512-9jWta97bBVC027/MShr3gLab8gPhKy4l6qpb+UJLF5pDm3501NvA7uvqVCW+REFtx00oTi6Cq9JzLwgq6evVgw==}

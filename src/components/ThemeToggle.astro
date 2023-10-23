@@ -1,127 +1,127 @@
 <script>
-	class ThemeToggle extends HTMLElement {
-		constructor() {
-			super();
-			const button = this.querySelector("button") as HTMLButtonElement;
+  class ThemeToggle extends HTMLElement {
+    constructor() {
+      super();
+      const button = this.querySelector("button") as HTMLButtonElement;
 
-			if (button) {
-				// button clicked, fire event
-				button.addEventListener("click", (e) => {
-					if (e.currentTarget instanceof HTMLButtonElement) {
-						// isPressed === dark mode current on
-						let isPressed =
-							e.currentTarget.getAttribute("aria-pressed") === "true";
+      if (button) {
+        // button clicked, fire event
+        button.addEventListener("click", (e) => {
+          if (e.currentTarget instanceof HTMLButtonElement) {
+            // isPressed === dark mode current on
+            let isPressed =
+              e.currentTarget.getAttribute("aria-pressed") === "true";
 
-						// invert isPressed
-						let themeChangeEvent = new CustomEvent("theme-change", {
-							detail: {
-								theme: isPressed ? "light" : "dark",
-							},
-						});
-						// dispatch event -> ThemeProvider.astro
-						document.documentElement.dispatchEvent(themeChangeEvent);
-						// toggle the aria-pressed attribute
-						button.setAttribute("aria-pressed", String(!isPressed));
-					}
-				});
-			}
-		}
-	}
+            // invert isPressed
+            let themeChangeEvent = new CustomEvent("theme-change", {
+              detail: {
+                theme: isPressed ? "light" : "dark",
+              },
+            });
+            // dispatch event -> ThemeProvider.astro
+            document.documentElement.dispatchEvent(themeChangeEvent);
+            // toggle the aria-pressed attribute
+            button.setAttribute("aria-pressed", String(!isPressed));
+          }
+        });
+      }
+    }
+  }
 
-	customElements.define("theme-toggle", ThemeToggle);
+  customElements.define("theme-toggle", ThemeToggle);
 </script>
 
 <theme-toggle class="ms-2 sm:ms-4">
-	<button
-		type="button"
-		id="toggle-theme"
-		class="group relative h-9 w-9 rounded-md p-2 ring-zinc-400 transition-all hover:ring-2"
-		aria-label="Toggle Dark Mode"
-	>
-		<svg
-			id="sun-svg"
-			class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100"
-			aria-hidden="true"
-			focusable="false"
-			stroke-width="1.5"
-			viewBox="0 0 24 24"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path
-				d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M22 12L23 12"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M12 2V1"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M12 23V22"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M20 20L19 19"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M20 4L19 5"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M4 20L5 19"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M4 4L5 5"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-			<path
-				d="M1 12L2 12"
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-		</svg>
-		<svg
-			id="moon-svg"
-			xmlns="http://www.w3.org/2000/svg"
-			class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100"
-			aria-hidden="true"
-			focusable="false"
-			stroke-width="1.5"
-			viewBox="0 0 24 24"
-			stroke="currentColor"
-			fill="none"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		>
-			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-			<path
-				d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
-			></path>
-			<path
-				d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"
-			></path>
-			<path d="M19 11h2m-1 -1v2"></path>
-		</svg>
-	</button>
+  <button
+    type="button"
+    id="toggle-theme"
+    class="group relative h-9 w-9 rounded-md p-2 ring-zinc-400 transition-all hover:ring-2"
+    aria-label="Toggle Dark Mode"
+  >
+    <svg
+      id="sun-svg"
+      class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-pressed:scale-100 group-aria-pressed:opacity-100"
+      aria-hidden="true"
+      focusable="false"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M22 12L23 12"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M12 2V1"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M12 23V22"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M20 20L19 19"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M20 4L19 5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M4 20L5 19"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M4 4L5 5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M1 12L2 12"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+    <svg
+      id="moon-svg"
+      xmlns="http://www.w3.org/2000/svg"
+      class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-[pressed=false]:scale-100 group-aria-[pressed=false]:opacity-100"
+      aria-hidden="true"
+      focusable="false"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+      ></path>
+      <path
+        d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"
+      ></path>
+      <path d="M19 11h2m-1 -1v2"></path>
+    </svg>
+  </button>
 </theme-toggle>
 
 {/* Inlined to avoid FOUC. */}
 <script is:inline>
-	const bodyThemeIsDark = document.documentElement.classList.contains("dark");
-	const button = document.getElementById("toggle-theme");
-	button.setAttribute("aria-pressed", String(bodyThemeIsDark));
+const bodyThemeIsDark = document.documentElement.classList.contains("dark");
+const button = document.getElementById("toggle-theme");
+button.setAttribute("aria-pressed", String(bodyThemeIsDark));
 </script>

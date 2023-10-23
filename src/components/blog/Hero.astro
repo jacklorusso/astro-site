@@ -4,11 +4,11 @@ import { getFormattedDate } from "@/utils";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
-	content: CollectionEntry<"post">;
+  content: CollectionEntry<"post">;
 }
 
 const {
-	content: { data },
+  content: { data },
 } = Astro.props;
 
 const datetime = data.publishDate.toISOString();
@@ -16,39 +16,39 @@ const postDate = getFormattedDate(data.publishDate, { month: "long" });
 ---
 
 {
-	data.coverImage && (
-		<div class="aspect-h-9 aspect-w-16 mb-6">
-			<Image
-				src={data.coverImage.src}
-				alt={data.coverImage.alt}
-				class="object-cover"
-				loading="eager"
-				fetchpriority="high"
-			/>
-		</div>
-	)
+  data.coverImage && (
+    <div class="aspect-h-9 aspect-w-16 mb-6">
+      <Image
+        src={data.coverImage.src}
+        alt={data.coverImage.alt}
+        class="object-cover"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+  )
 }
 <h1 class="title mb-3 sm:mb-1">{data.title}</h1>
 <time datetime={datetime} class="text-gray-500 dark:text-gray-400"
-	>{postDate}</time
+  >{postDate}</time
 >
 {
-	!!data.tags?.length && (
-		<div class="mt-1 text-gray-500 dark:text-gray-400 sm:mt-0 sm:inline sm:before:mx-2 sm:before:content-['|']">
-			{data.tags.map((tag) => (
-				<>
-					<a
-						class="inline-block underline before:content-['#']"
-						aria-label={`View more blogs with the tag ${tag}`}
-						href={`/tags/${tag}/`}
-						data-pagefind-filter="tag"
-					>
-						{tag}
-					</a>
-					&nbsp;
-				</>
-			))}
-		</div>
-	)
+  !!data.tags?.length && (
+    <div class="mt-1 text-gray-500 dark:text-gray-400 sm:mt-0 sm:inline sm:before:mx-2 sm:before:content-['|']">
+      {data.tags.map((tag) => (
+        <>
+          <a
+            class="inline-block underline before:content-['#']"
+            aria-label={`View more blogs with the tag ${tag}`}
+            href={`/tags/${tag}/`}
+            data-pagefind-filter="tag"
+          >
+            {tag}
+          </a>
+          &nbsp;
+        </>
+      ))}
+    </div>
+  )
 }
 <!-- <p class="prose mt-8">{data.description}</p> -->

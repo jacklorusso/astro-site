@@ -4,80 +4,82 @@ import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
 import { sortMDByDate } from "@/utils";
 
-const MAX_POSTS = 10;
+const MAX_POSTS = 4;
 const allPosts = await getCollection("post", ({ data }) => !data.draft);
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 const now: Array<{ title: string; desc: string; href?: string }> = [
-	{
-		title: "Reading",
-		desc: "A Little Life — Hanya Yanagihara",
-		href: "https://www.goodreads.com/en/book/show/22822858",
-	},
-	{
-		title: "Listening to",
-		desc: "Poems To Dance To — Antony Szmierek",
-		href: "https://open.spotify.com/album/0U9mRtGVLWsNRDJs6ccB9y?si=oyGCShyhSziG8stpbUS1Vw",
-	},
-	{
-		title: "Working on",
-		desc: "The Seattle Sport custom Bluesky feed",
-href: "https://bsky.app/profile/did:plc:7dzg2vnr65pvlqgb2ziqgm4d/feed/aaana2tpo7js6"
-	},
+  {
+    title: "Reading",
+    desc: "A Little Life — Hanya Yanagihara",
+    href: "https://www.goodreads.com/en/book/show/22822858",
+  },
+  {
+    title: "Listening to",
+    desc: "Poems To Dance To — Antony Szmierek",
+    href: "https://open.spotify.com/album/0U9mRtGVLWsNRDJs6ccB9y?si=oyGCShyhSziG8stpbUS1Vw",
+  },
+  {
+    title: "Working on",
+    desc: "The Seattle Sport custom Bluesky feed",
+    href: "https://bsky.app/profile/did:plc:7dzg2vnr65pvlqgb2ziqgm4d/feed/aaana2tpo7js6",
+  },
 ];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<section>
-		<h1 class="title mb-6">
-			Jack Lo Russo is a software engineer and designer from
-			Sydney,&nbsp;Australia.
-		</h1>
-		<p class="mb-4">
-			For a lot of my career, I've been focused on building, maintaining and
-			scaling design systems. I am currently working on the <a
-				href="https://atlassian.design">Atlassian Design System</a
-			>. Outside of tech, I'm passionate about education and the arts, and I'm a
-			huge Sydney and Seattle sports&nbsp;fan&nbsp;⚾️
-		</p>
-	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				allPostsByDate.map((p) => (
-					<li class="flex flex-col gap-x-2 sm:flex-row">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
-	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Now</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				now.map(({ href, title, desc }) => (
-					<li class="flex flex-col gap-x-2 sm:flex-row">
-						<p class="min-w-[120px] text-gray-500 dark:text-gray-400">
-							{title}:
-						</p>
+  <section>
+    <h1 class="title mb-6">
+      Jack Lo Russo is a software engineer and designer from
+      Sydney,&nbsp;Australia.
+    </h1>
+    <p class="mb-4">
+      For a lot of my career, I've been focused on building, maintaining and
+      scaling design systems. I am currently working on the <a
+        href="https://atlassian.design">Atlassian Design System</a
+      >. Outside of tech, I'm passionate about education and the arts, and I'm a
+      huge Sydney and Seattle sports&nbsp;fan&nbsp;⚾️
+    </p>
+  </section>
+  <section class="mt-16">
+    <div class="flex items-baseline">
+      <h2 class="title mb-4 text-xl">Recent posts</h2>
+    </div>
+    <ul class="space-y-4 sm:space-y-2">
+      {
+        allPostsByDate.map((p) => (
+          <li class="flex flex-col gap-x-2 sm:flex-row">
+            <PostPreview post={p} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+  <section class="mt-16">
+    <h2 class="title mb-4 text-xl">Now</h2>
+    <ul class="space-y-4 sm:space-y-2">
+      {
+        now.map(({ href, title, desc }) => (
+          <li class="flex flex-col gap-x-2 sm:flex-row">
+            <p class="min-w-[120px] text-gray-500 dark:text-gray-400">
+              {title}:
+            </p>
 
-						{href ? (
-							<a
-								href={href}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="underline"
-							>
-								{desc}
-							</a>
-						) : (
-							<span>{desc}</span>
-						)}
-					</li>
-				))
-			}
-		</ul>
-	</section>
+            {href ? (
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline"
+              >
+                {desc}
+              </a>
+            ) : (
+              <span>{desc}</span>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </PageLayout>

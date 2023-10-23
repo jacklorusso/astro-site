@@ -1,44 +1,44 @@
 @tailwind base;
 
 @layer base {
-	:root {
-		color-scheme: light;
-		--theme-bg: #ffffff;
-		--theme-link: #43468a;
-		--theme-text: #22272a;
-		--theme-accent: #36b6dd;
-		--theme-accent-2: #111;
-		--theme-quote: #cc2a42;
-		--theme-menu-bg: rgb(250 250 250 / 0.85);
-	}
+  :root {
+    color-scheme: light;
+    --theme-bg: #ffffff;
+    --theme-link: #43468a;
+    --theme-text: #22272a;
+    --theme-accent: #36b6dd;
+    --theme-accent-2: #111;
+    --theme-quote: #cc2a42;
+    --theme-menu-bg: rgb(250 250 250 / 0.85);
+  }
 
-	:root.dark {
-		color-scheme: dark;
-		--theme-bg: #000000;
-		--theme-link: #36b6dd;
-		--theme-text: #c9cacc;
-		--theme-accent: #f03085;
-		--theme-accent-2: #eee;
-		--theme-quote: #ccffb6;
-		--theme-menu-bg: rgb(29 31 33 / 0.85);
-	}
+  :root.dark {
+    color-scheme: dark;
+    --theme-bg: #000000;
+    --theme-link: #36b6dd;
+    --theme-text: #c9cacc;
+    --theme-accent: #f03085;
+    --theme-accent-2: #eee;
+    --theme-quote: #ccffb6;
+    --theme-menu-bg: rgb(29 31 33 / 0.85);
+  }
 
-	html {
-		@apply h-full scroll-smooth;
-		text-wrap: pretty;
-	}
+  html {
+    @apply h-full scroll-smooth;
+    text-wrap: pretty;
+  }
 
-	html body {
-		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-sans font-normal text-textColor;
-	}
+  html body {
+    @apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-sans font-normal text-textColor;
+  }
 
-	a {
-		@apply underline hover:text-link;
-	}
+  a {
+    @apply underline hover:text-link;
+  }
 
-	blockquote {
-		@apply border-s-2 border-accent font-light text-lg !important;
-	}
+  blockquote {
+    @apply border-s-2 border-accent text-lg font-light !important;
+  }
 }
 
 @tailwind components;
