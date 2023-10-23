@@ -11,9 +11,6 @@ dependencies:
   '@astrojs/rss':
     specifier: ^3.0.0
     version: 3.0.0
-  '@philnash/astro-pagination':
-    specifier: ^0.3.0
-    version: 0.3.0(astro@3.3.0)
   astro:
     specifier: 3.3.0
     version: 3.3.0(typescript@5.2.2)
@@ -983,14 +980,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@philnash/astro-pagination@0.3.0(astro@3.3.0):
-    resolution: {integrity: sha512-+z3H944hZm6zKWKkhCFhAsq+Z6rarbLIAUAN0DJ8gL3y9H1Lpz54M0pbVQ+Cq17iDAeYXlE49lQLzU6K+Wxpgg==}
-    peerDependencies:
-      astro: ^2.3.0 || ^3.0.0
-    dependencies:
-      astro: 3.3.0(typescript@5.2.2)
-    dev: false
 
   /@pkgr/utils@2.4.2:
     resolution: {integrity: sha512-POgTXhjrTfbTV63DiFXav4lBHiICLKKwDeaKn9Nphwj7WH6m0hMMCaJkMyRWjgtPFyRKRVoMXXjczsTQRDEhYw==}
