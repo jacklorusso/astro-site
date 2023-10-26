@@ -131,6 +131,4 @@ If for some reason you're inerested in what the feed actually looks like under t
 
 ## PS. Need a Bluesky invite?
 
-Anyone reading this who want an invite to Bluesky, hit me up — I have a few kicking around.
-
-If you read this far, you deserve one!
+Anyone reading this who wants an invite to Bluesky, hit me up — I have a few kicking around. If you read this far, you deserve one!
