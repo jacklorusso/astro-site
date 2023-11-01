@@ -1,3 +1,4 @@
+import type { APIRoute } from "astro";
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import { siteConfig } from "@/site-config";
@@ -5,7 +6,7 @@ import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 const parser = new MarkdownIt();
 
-export const GET = async () => {
+export const GET: APIRoute = async () => {
   const posts = await getCollection("post", ({ data }) => !data.draft);
 
   return rss({
