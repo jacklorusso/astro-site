@@ -2,9 +2,6 @@
 title: "The resurrection of Helvetica Bot"
 description: "Bringing one of my favourite Twitter bot art projects back to life on Bluesky"
 publishDate: "2 Nov 2023"
-coverImage:
-  src: "./helvetica-bot-hero.png"
-  alt: ""
 tags: ["dev", "bot", "bluesky", "twitter", "social media", "atproto"]
 ---
 
