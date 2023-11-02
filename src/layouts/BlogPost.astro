@@ -68,16 +68,20 @@ const { headings } = await post.render();
         class="prose prose-cactus mt-12 prose-headings:font-semibold prose-headings:before:absolute prose-headings:before:-ms-5 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-a:font-normal prose-th:before:content-none"
       >
         <slot />
+        <section class="mt-12 border-t">
+          <div class="pt-8">
+            <p class="italics">
+              <a href="/posts">See more posts</a>
+            </p>
+            <p class="italics">
+              <a href="/rss.xml">subscribe via RSS feed</a>
+            </p>
+          </div>
+        </section>
       </div>
-
-      <hr class="mb-8 mt-12" />
-      <p class="italic">
-        <a href="/posts">See more posts</a> or subscribe to this site via <a
-          href="/rss.xml">RSS feed</a
-        > if you like!
-      </p>
     </article>
   </div>
+
   <button
     id="to-top-btn"
     class="z-90 fixed bottom-8 end-4 flex h-10 w-10 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-zinc-200 text-3xl opacity-0 transition-all duration-300 hover:border-zinc-400 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 dark:bg-zinc-700 sm:end-8 sm:h-12 sm:w-12"
