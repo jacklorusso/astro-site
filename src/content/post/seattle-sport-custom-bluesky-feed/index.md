@@ -71,7 +71,7 @@ bsky.app:
 
 ## Show me the JSON
 
-If for some reason you're inerested in what the feed actually looks like under the hood at this point in time, here it is. These are the blocks I described earlier.
+If for some reason you're interested in what the feed actually looks like under the hood at this point in time, here it is. These are the blocks I described earlier.
 
 ```json
 {
