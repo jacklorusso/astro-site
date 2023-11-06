@@ -1,0 +1,103 @@
+---
+import { Image } from "astro:assets";
+import type { WebmentionsChildren } from "@/types";
+
+interface Props {
+  mentions: WebmentionsChildren[];
+}
+
+const { mentions } = Astro.props;
+
+const validComments = ["mention-of", "in-reply-to"];
+
+const comments = mentions.filter(
+  (mention) =>
+    validComments.includes(mention["wm-property"]) && mention.content?.text
+);
+
+/**
+ ! show a link to the mention 
+
+ */
+---
+
+{
+  !!comments.length && (
+    <div>
+      <p class="mb-0 text-accent-2">
+        <strong>{comments.length}</strong> Mention
+        {comments.length > 1 ? "s" : ""}
+      </p>
+      <ul class="mt-0 divide-y divide-textColor/20 ps-0" role="list">
+        {comments.map((mention) => (
+          <li class="my-0 flex items-start gap-x-5 py-5">
+            {mention.author?.photo && mention.author.photo !== "" ? (
+              mention.author.url && mention.author.url !== "" ? (
+                <a
+                  href={mention.author.url}
+                  class="not-prose shrink-0 overflow-hidden rounded-full outline-none ring-2 ring-textColor hover:ring-4 hover:ring-link focus-visible:ring-4 focus-visible:ring-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={mention.author.name}
+                >
+                  <Image
+                    class="my-0 h-12 w-12"
+                    src={mention.author?.photo}
+                    alt={mention.author?.name}
+                    width={48}
+                    height={48}
+                  />
+                </a>
+              ) : (
+                <Image
+                  class="my-0 h-12 w-12 rounded-full"
+                  src={mention.author?.photo}
+                  alt={mention.author?.name}
+                  width={48}
+                  height={48}
+                />
+              )
+            ) : null}
+            <div class="flex-auto">
+              <div class="flex items-center justify-between gap-x-2">
+                <p class="my-0 line-clamp-1 font-semibold text-accent-2">
+                  {mention.author?.name}
+                </p>
+                <a
+                  href={mention.url}
+                  class="not-prose hover:text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Vist the source of this mention"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                    <path d="M11 13l9 -9" />
+                    <path d="M15 4h5v5" />
+                  </svg>
+                </a>
+              </div>
+              <p class="mb-0 mt-1 break-words [word-break:break-word]">
+                {mention.content?.text}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}

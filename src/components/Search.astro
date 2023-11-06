@@ -8,7 +8,7 @@ import "@pagefind/default-ui/css/ui.css";
   <button
     data-open-modal
     disabled
-    class="flex h-9 w-9 items-center justify-center rounded-md ring-zinc-400 transition-all hover:ring-2"
+    class="flex h-9 w-9 items-center justify-center rounded-md hover:ring-2 ring-current hover:text-link"
   >
     <svg
       aria-label="search"
@@ -60,10 +60,10 @@ import "@pagefind/default-ui/css/ui.css";
     constructor() {
       super();
       const openBtn = this.querySelector<HTMLButtonElement>(
-        "button[data-open-modal]",
+        "button[data-open-modal]"
       )!;
       const closeBtn = this.querySelector<HTMLButtonElement>(
-        "button[data-close-modal]",
+        "button[data-close-modal]"
       )!;
       const dialog = this.querySelector("dialog")!;
       const dialogFrame = this.querySelector(".dialog-frame")!;

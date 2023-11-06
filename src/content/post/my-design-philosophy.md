@@ -2,7 +2,7 @@
 title: "My design philosophy"
 description: "This post is barely more than a few bullet points and some links. Maybe that is fitting."
 publishDate: "10 Oct 2023"
-tags: ["web", "design", "dev", "philosophy"]
+tags: ["design", "dev", "philosophy"]
 ---
 
 Recently I've been thinking about my design philosophy. How it's evolved over the years, and what has stayed the same. Where it is similar or different to my colleagues. Which articles or books I return to over and over again, and like to share with people.

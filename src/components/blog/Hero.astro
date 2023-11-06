@@ -8,9 +8,10 @@ interface Props {
 }
 
 const {
-  content: { data },
+  content: { data, render },
 } = Astro.props;
 
+const { remarkPluginFrontmatter } = await render();
 const datetime = data.publishDate.toISOString();
 const postDate = getFormattedDate(data.publishDate, { month: "long" });
 ---
@@ -28,27 +29,29 @@ const postDate = getFormattedDate(data.publishDate, { month: "long" });
     </div>
   )
 }
-<h1 class="title mb-3 sm:mb-1">{data.title}</h1>
-<time datetime={datetime} class="text-gray-500 dark:text-gray-400"
-  >{postDate}</time
->
-{
-  !!data.tags?.length && (
-    <div class="mt-1 text-gray-500 dark:text-gray-400 sm:mt-0 sm:inline sm:before:mx-2 sm:before:content-['|']">
-      {data.tags.map((tag) => (
-        <>
-          <a
-            class="inline-block underline before:content-['#']"
-            aria-label={`View more blogs with the tag ${tag}`}
-            href={`/tags/${tag}/`}
-            data-pagefind-filter="tag"
-          >
-            {tag}
-          </a>
-          &nbsp;
-        </>
-      ))}
-    </div>
-  )
-}
-<!-- <p class="prose mt-8">{data.description}</p> -->
+<h1 class="title mb-3">{data.title}</h1>
+<p class="text-gray-500 dark:text-gray-400 mb-2">
+  <time datetime={datetime}>{postDate}</time>{" / "}
+  {remarkPluginFrontmatter.minutesRead}
+</p>
+<p>
+  {
+    !!data.tags?.length && (
+      <div class="text-gray-500 dark:text-gray-400 ">
+        {data.tags.map((tag) => (
+          <>
+            <a
+              class="inline-block underline before:content-['#']"
+              aria-label={`View more blogs with the tag ${tag}`}
+              href={`/tags/${tag}/`}
+              data-pagefind-filter="tag"
+            >
+              {tag}
+            </a>
+            &nbsp;
+          </>
+        ))}
+      </div>
+    )
+  }
+</p>

@@ -1,6 +1,8 @@
 ---
 import ThemeToggle from "../ThemeToggle.astro";
 import Search from "../Search.astro";
+import RSS from "../RSS.astro";
+
 import { MENU_LINKS } from "@/data/constants";
 const url = new URL(Astro.request.url);
 ---
@@ -11,7 +13,7 @@ const url = new URL(Astro.request.url);
   document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("main-header") as HTMLElement;
     const toggleMenuButton = document.getElementById(
-      "toggle-navigation-menu",
+      "toggle-navigation-menu"
     ) as HTMLButtonElement;
     let menuOpen = false;
 
@@ -44,7 +46,7 @@ const url = new URL(Astro.request.url);
     </a>
     <nav
       id="navigation-menu"
-      class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-[--theme-menu-bg] py-4 text-xl shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:ml-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:items-baseline sm:bg-transparent sm:py-0 sm:text-base sm:text-inherit sm:shadow-none sm:backdrop-blur-none"
+      class="absolute inset-x-0 bg-bgColor top-14 hidden flex-col items-end gap-y-4 rounded-md ring-2 ring-link sm:ring-0 py-4 text-xl group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:ml-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:items-baseline sm:bg-transparent sm:py-0 sm:text-base sm:text-inherit"
       aria-label="Main menu"
     >
       <a
@@ -53,7 +55,7 @@ const url = new URL(Astro.request.url);
         aria-current={url.pathname === "/" ? "page" : false}
         rel="prefetch"
       >
-        Home
+        home
       </a>
 
       {
@@ -71,10 +73,11 @@ const url = new URL(Astro.request.url);
     </nav>
   </div>
   <Search />
+  <RSS />
   <ThemeToggle />
   <button
     id="toggle-navigation-menu"
-    class="group relative ms-2 h-9 w-9 rounded-md p-2 ring-zinc-400 transition-all hover:ring-2 sm:invisible sm:ms-4 sm:hidden"
+    class="group relative ms-2 h-9 w-9 rounded-md p-2 transition-transform hover:ring-2 ring-current hover:text-link sm:invisible sm:ms-4 sm:hidden"
     type="button"
     aria-label="Open main menu"
     aria-expanded="false"
@@ -82,7 +85,7 @@ const url = new URL(Astro.request.url);
   >
     <svg
       id="line-svg"
-      class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
+      class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 transition-transform group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
       aria-hidden="true"
       focusable="false"
       xmlns="http://www.w3.org/2000/svg"
@@ -98,8 +101,7 @@ const url = new URL(Astro.request.url);
     </svg>
     <svg
       id="cross-svg"
-      class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
-      class="text-accent"
+      class="absolute start-1/2 top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 scale-0 text-link opacity-0 transition-transform group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
       aria-hidden="true"
       focusable="false"
       xmlns="http://www.w3.org/2000/svg"

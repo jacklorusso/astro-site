@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
-import plugin from "tailwindcss/plugin";
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
@@ -95,12 +94,5 @@ export default {
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
-    plugin(function ({ addComponents }) {
-      addComponents({
-        ".title": {
-          "@apply text-3xl font-semibold text-accent-2": {},
-        },
-      });
-    }),
   ],
 } satisfies Config;

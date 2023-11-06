@@ -11,7 +11,7 @@ Back in the day I made a Twitter bot that generates designs inspired by the clas
 
 [View Helvetica Bot on Bluesky](https://bsky.app/profile/helveticabot.jacklorusso.com)
 
-## Origin story 
+## Origin story
 
 I built this project in a rush of pure inspiration. It was 2018, I was sitting in a café in Prague and I had just finished reading Darius Kazemi's write-up of [how he made his Bracket Meme Bot using the Wikipedia API](http://tinysubversions.com/notes/bracket-meme-bot/) (if you're into computational creativity and you're not familiar with his work, you should definitely [check him out](http://tinysubversions.com/bio.html)). I looked up from my laptop and immediately noticed somebody wearing a "John & Paul & Ringo & George" t-shirt. An idea for a new Twitter bot just fell right into my lap.
 
