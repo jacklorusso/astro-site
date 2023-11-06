@@ -1,15 +1,18 @@
 export const MENU_LINKS = [
   {
-    title: "About",
-    path: "/about/",
+    title: "about",
+    path: "/about",
   },
   {
-    title: "Blog",
-    path: "/posts/",
+    title: "writing",
+    path: "/posts",
   },
+  // {
+  //   title: "micro-blog",
+  //   path: "/micro-blog/",
+  // },
 ];
 
-// ! Remember to add your own socials
 export const SOCIAL_LINKS = {
   bluesky: "https://bsky.app/profile/jacklorusso.com",
   github: "https://github.com/jacklorusso",

@@ -4,7 +4,7 @@
   :root {
     color-scheme: light;
     --theme-bg: #ffffff;
-    --theme-link: #43468a;
+    --theme-link: #e41170;
     --theme-text: #22272a;
     --theme-accent: #36b6dd;
     --theme-accent-2: #111;
@@ -17,7 +17,7 @@
     --theme-bg: #000000;
     --theme-link: #36b6dd;
     --theme-text: #c9cacc;
-    --theme-accent: #f03085;
+    --theme-accent: #e41170;
     --theme-accent-2: #eee;
     --theme-quote: #ccffb6;
     --theme-menu-bg: rgb(29 31 33 / 0.85);
@@ -38,6 +38,10 @@
 
   blockquote {
     @apply border-s-2 border-accent text-lg font-light !important;
+  }
+
+  .title {
+    @apply text-3xl font-semibold;
   }
 }
 

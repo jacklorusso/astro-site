@@ -6,7 +6,7 @@ tags: ["howto", "bluesky", "atproto", "social media", "seattle", "sport"]
 draft: false
 ---
 
->Welcome to a new paradigm in social media where users have more choice and control. Our implementation of algorithmic choice lets users customize one of the most important parts of their social media experience: their feed.
+> Welcome to a new paradigm in social media where users have more choice and control. Our implementation of algorithmic choice lets users customize one of the most important parts of their social media experience: their feed.
 
 Custom feeds are one of the best parts of Bluesky — if you want to learn more you can read their blog post [Algorithmic Choice with Custom Feeds](https://blueskyweb.xyz/blog/7-27-2023-custom-feeds).
 
@@ -20,7 +20,7 @@ Hopefully this post is helpful for anyone who wants to make their own feed, or j
 
 The first and the biggest decision you have to make is whether you want to _really_ do-it-yourself and self-host an [ATProto](https://atproto.com) Feed Generator service. Bluesky have published a [starter kit on Github](https://github.com/bluesky-social/feed-generator) that can get you going, but you're going to have to be a software developer to make any ground.
 
-If you just want to get in there and mess around, there is a much easier way: use [SkyFeed](https://skyfeed.app)! 
+If you just want to get in there and mess around, there is a much easier way: use [SkyFeed](https://skyfeed.app)!
 
 I ended up using the SkyFeed builder, mostly because I didn't want the maintenance cost/effort of running my own service. It doesn't have the _best_ UX — you're going to have to play around to get the hang of it — so I'll stop short of wholeheartedly endorsing it as a good option for people who aren't tech savvy. Skyfeed certainly lowers the barrier to entry though. It has a preview of your feed as you build, you can publish your feed easily and then use it in Bluesky right away. Pretty neat!
 
@@ -40,7 +40,6 @@ And that's it! For any interest-based feed it's probably going to look very simi
 It was a lot of fun surfing the feed during the Seahawks game against Arizona — this was it's first real workout and it did great!
 
 ![A screenshot of the Seattle Sport feed with multiple live posts about the game.](./seahawks-arizona-feed.png)
-
 
 ## Logo talk
 
