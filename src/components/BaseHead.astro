@@ -73,3 +73,12 @@ const socialImageURL = new URL(
   title={siteConfig.title}
   href="/rss.xml"
 />
+
+{/* Webmentions */}
+{
+	siteConfig.webmentions && (
+		<>
+			<link rel="webmention" href={siteConfig.webmentions.link} />
+		</>
+	)
+}
