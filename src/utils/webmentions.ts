@@ -16,7 +16,7 @@ const hostName = new URL(DOMAIN).hostname;
 // Calls webmention.io api.
 async function fetchWebmentions(timeFrom: string | null, perPage = 1000) {
   if (!DOMAIN) {
-    console.warn("No domain specified. Please set in astro.config.ts");
+    console.warn("No domain specified.");
     return null;
   }
 
