@@ -23,4 +23,5 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/jacklorusso/",
   readcv: "https://read.cv/jacklorusso",
   email: "jacklorusso@gmail.com",
+  mastodon: "https://mastodon.social/@jacklorusso",
 };
