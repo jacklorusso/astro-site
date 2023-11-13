@@ -29,9 +29,15 @@ const postDate = getFormattedDate(data.publishDate, { month: "long" });
     </div>
   )
 }
-<h1 class="title mb-3">{data.title}</h1>
+<h1 class="p-name entry-title title mb-3">{data.title}</h1>
 <p class="text-gray-500 dark:text-gray-400 mb-2">
-  <time datetime={datetime}>{postDate}</time>{" / "}
+  <span class="sr-only"
+    >Published by <a class="p-author h-card" href="http://jacklorusso.com"
+      >Jack Lo Russo</a
+    >
+     on
+  </span>
+  <time class="dt-published" datetime={datetime}>{postDate}</time>{" / "}
   {remarkPluginFrontmatter.minutesRead}
 </p>
 <p>
@@ -41,7 +47,8 @@ const postDate = getFormattedDate(data.publishDate, { month: "long" });
         {data.tags.map((tag) => (
           <>
             <a
-              class="inline-block underline before:content-['#']"
+              rel="category tag"
+              class="p-category inline-block underline before:content-['#']"
               aria-label={`View more blogs with the tag ${tag}`}
               href={`/tags/${tag}/`}
               data-pagefind-filter="tag"

@@ -14,12 +14,18 @@ const datetime = date.toISOString();
 const postDate = getFormattedDate(date);
 ---
 
-<time datetime={datetime} class="min-w-[120px] text-gray-500 dark:text-gray-400"
+<time
+  datetime={datetime}
+  class="min-w-[120px] text-gray-500 dark:text-gray-400 dt-published published"
   >{postDate}</time
 >
 <Element>
-  <a href={`/posts/${post.slug}/`} class="underline" rel="prefetch">
+  <a
+    href={`/posts/${post.slug}/`}
+    class="underline p-name entry-title"
+    rel="prefetch"
+  >
     {post.data.title}
   </a>
 </Element>
-{withDesc && <p>{post.data.description}</p>}
+{withDesc && <p class="p-summary entry-summary">{post.data.description}</p>}

@@ -11,6 +11,10 @@ export const MENU_LINKS = [
   //   title: "micro-blog",
   //   path: "/micro-blog/",
   // },
+  {
+    title: "rss",
+    path: "/rss.xml",
+  },
 ];
 
 export const SOCIAL_LINKS = {

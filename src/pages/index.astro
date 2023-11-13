@@ -42,7 +42,7 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       scaling design systems. I'm currently working on the <a
         href="https://atlassian.design">Atlassian Design System</a
       >. Outside of tech, I'm passionate about education and the arts, and I'm a
-      huge Sydney and Seattle sports fan.
+      huge Sydney and Seattle sports&nbsp;fan&nbsp;⚾️
     </p>
     <p></p>
   </section>
@@ -50,10 +50,10 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
     <div class="flex items-baseline">
       <h2 class="title mb-4 text-xl">Recent writing</h2>
     </div>
-    <ul class="space-y-4 sm:space-y-2">
+    <ul class="space-y-4 sm:space-y-2 h-feed hfeed">
       {
         allPostsByDate.map((p) => (
-          <li class="flex flex-col gap-x-2 sm:flex-row">
+          <li class="flex flex-col gap-x-2 sm:flex-row h-entry hentry">
             <PostPreview post={p} />
           </li>
         ))

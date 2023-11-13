@@ -9,7 +9,12 @@ const DOMAIN = import.meta.env.SITE;
 const API_TOKEN = import.meta.env.WEBMENTION_API_KEY;
 const CACHE_DIR = ".data";
 const filePath = `${CACHE_DIR}/webmentions.json`;
-const validWebmentionTypes = ["like-of", "mention-of", "in-reply-to"];
+const validWebmentionTypes = [
+  "like-of",
+  "repost-of",
+  "mention-of",
+  "in-reply-to",
+];
 
 const hostName = new URL(DOMAIN).hostname;
 
@@ -54,6 +59,14 @@ function mergeWebmentions(
 // filter out WebmentionChildren
 export function filterWebmentions(webmentions: WebmentionsChildren[]) {
   return webmentions.filter((webmention) => {
+    // filter out replies from me as they look weird
+    if (
+      webmention["wm-property"] === "in-reply-to" &&
+      webmention.author?.url === "https://bsky.app/profile/jacklorusso.com"
+    ) {
+      return false;
+    }
+
     // make sure the mention has a property so we can sort them later
     if (!validWebmentionTypes.includes(webmention["wm-property"])) return false;
 
