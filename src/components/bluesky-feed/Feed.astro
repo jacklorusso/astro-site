@@ -1,0 +1,22 @@
+---
+import {agent} from '@/utils';
+
+import Post from './Post.astro'
+
+const { postLimit } = Astro.props;
+
+
+const myFeed = await agent.app.bsky.feed.getAuthorFeed({
+    actor: "did:plc:7dzg2vnr65pvlqgb2ziqgm4d",
+    limit: postLimit + 10 // Hack to work around the latest posts potentially being reskeets or replies. Is there a better way?
+})
+
+const filteredFeed = await myFeed.data.feed.filter(post => post.post.author.handle === "jacklorusso.com" && post.reply === undefined)
+
+---
+
+<div className="container mx-auto">
+    <ul>
+        {postLimit === 1 ? <Post uri={filteredFeed[0].post.uri} /> : filteredFeed.map(post => <Post uri={post.post.uri} />)}
+    </ul>
+</div>

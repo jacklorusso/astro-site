@@ -19,7 +19,7 @@ export default defineConfig({
   image: {
     // https://docs.astro.build/en/guides/assets/#using-sharp
     service: sharpImageService(),
-		domains: ["webmention.io"],
+    domains: ["webmention.io"],
   },
   integrations: [
     mdx({}),

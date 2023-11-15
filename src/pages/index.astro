@@ -1,7 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import PageLayout from "@/layouts/Base";
+import SocialList from "@/components/SocialList";
 import PostPreview from "@/components/blog/PostPreview";
+import BlueskyFeed from "@/components/bluesky-feed/Feed";
+
 import { sortMDByDate } from "@/utils";
 
 const MAX_POSTS = 15;
@@ -45,11 +48,13 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       >. Outside of tech, I'm passionate about education and the arts, and I'm a
       huge Sydney and Seattle sports&nbsp;fan&nbsp;⚾️
     </p>
-    <p></p>
+    <!-- <nav aria-label="Social links">
+      <SocialList />
+    </nav> -->
   </section>
-  <section class="mt-16">
+  <section class="mt-12">
     <div class="flex items-baseline">
-      <h2 class="title mb-4 text-xl">Recent writing</h2>
+      <h2 class="title mb-4 text-xl">Recent <a href="/posts">writing</a></h2>
     </div>
     <ul class="space-y-4 sm:space-y-2 h-feed hfeed">
       {
@@ -61,7 +66,7 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       }
     </ul>
   </section>
-  <section class="mt-16">
+  <section class="mt-12">
     <h2 class="title mb-4 text-xl">Now</h2>
     <ul class="space-y-4 sm:space-y-2">
       {
@@ -88,11 +93,8 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       }
     </ul>
   </section>
-  <!-- <section class="mt-16">
-    <h2 class="title mb-4 text-xl">Latest micro-blog</h2>
-    <div class="border rounded p-4">
-      <p>@jacklorusso.com</p>
-      <p>just setting up my bsky</p>
-    </div>
-  </section> -->
+  <section class="mt-12">
+    <h2 class="title mb-4 text-xl">Latest <a href="/posts">micro-blog</a></h2>
+    <BlueskyFeed postLimit={1} />
+  </section>
 </PageLayout>

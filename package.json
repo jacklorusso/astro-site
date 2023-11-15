@@ -2,6 +2,7 @@
   "name": "jacklorusso.com",
   "version": "1.0.0",
   "private": false,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -36,6 +37,7 @@
   "dependencies": {
     "@astrojs/prefetch": "^0.4.1",
     "@astrojs/rss": "^3.0.0",
+    "@atproto/api": "^0.6.23",
     "astro": "^3.5.3",
     "astro-google-analytics": "^1.0.3",
     "markdown-it": "^13.0.2",
