@@ -14,7 +14,9 @@ if (!webMentions.length) return;
   !!webMentions.length && (
     <>
       <hr class="border-solid border-gray-300 dark:border-gray-700" />
-      <h2 class="mb-8 before:hidden">Webmentions for this post</h2>
+      <h2 class="mb-8 before:hidden" id="webmentions">
+        Webmentions for this post
+      </h2>
       <div class="space-y-10">
         <Likes mentions={webMentions} />
         <Comments mentions={webMentions} />
