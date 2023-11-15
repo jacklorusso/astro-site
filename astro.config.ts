@@ -30,6 +30,9 @@ export default defineConfig({
     prefetch(),
   ],
   vite: {
+    // ssr: {
+    //   noExternal: ["@atproto/api"],
+    // },
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },

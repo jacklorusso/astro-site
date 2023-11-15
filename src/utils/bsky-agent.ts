@@ -1,6 +1,6 @@
-import { BskyAgent } from "@atproto/api";
+import * as atproto from "@atproto/api";
 
-export const agent = new BskyAgent({
+export const agent = new atproto.BskyAgent({
   // AppView URL
   service: "https://api.bsky.app",
 });
