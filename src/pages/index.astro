@@ -7,7 +7,7 @@ import PostPreview from "@/components/blog/PostPreview";
 
 import { sortMDByDate } from "@/utils";
 
-const MAX_POSTS = 15;
+const MAX_POSTS = 5;
 const allPosts = await getCollection("post", ({ data }) => !data.draft);
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
