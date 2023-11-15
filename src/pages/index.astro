@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import PageLayout from "@/layouts/Base";
 // import SocialList from "@/components/SocialList";
 import PostPreview from "@/components/blog/PostPreview";
-import BlueskyFeed from "@/components/bluesky-feed/Feed";
+// import BlueskyFeed from "@/components/bluesky-feed/Feed";
 
 import { sortMDByDate } from "@/utils";
 
@@ -93,8 +93,8 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       }
     </ul>
   </section>
-  <section class="mt-12">
+  <!-- <section class="mt-12">
     <h2 class="title mb-4 text-xl">Latest <a href="/posts">micro-blog</a></h2>
     <BlueskyFeed postLimit={1} />
-  </section>
+  </section> -->
 </PageLayout>
