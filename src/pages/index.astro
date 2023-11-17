@@ -7,7 +7,7 @@ import PostPreview from "@/components/blog/PostPreview";
 
 import { sortMDByDate } from "@/utils";
 
-const MAX_POSTS = 10;
+const MAX_POSTS = 5;
 const allPosts = await getCollection("post", ({ data }) => !data.draft);
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
@@ -47,7 +47,7 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       <SocialList />
     </nav> -->
   </section>
-  <section class="mt-12">
+  <section class="mt-16">
     <div class="flex items-baseline">
       <h2 class="title mb-4 text-xl">Recent writing</h2>
     </div>
@@ -61,7 +61,7 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       }
     </ul>
   </section>
-  <section class="mt-12">
+  <section class="mt-16">
     <h2 class="title mb-4 text-xl">Now</h2>
     <ul class="space-y-4 sm:space-y-2">
       {
