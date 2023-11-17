@@ -40,6 +40,7 @@
     "astro": "^3.5.3",
     "astro-google-analytics": "^1.0.3",
     "markdown-it": "^13.0.2",
+    "remark-smartypants": "^2.0.0",
     "sanitize-html": "^2.11.0",
     "satori": "^0.10.9",
     "satori-html": "^0.3.2",
