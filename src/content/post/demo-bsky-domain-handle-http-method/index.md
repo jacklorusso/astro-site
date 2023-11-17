@@ -11,7 +11,7 @@ I love that you can set your domain as your handle with Bluesky (or more correct
 
 You're reading this on [jacklorusso.com](/). On Bluesky, I'm [@jacklorusso.com](https://bsky.app/profile/jacklorusso.com). Any account that is owned by me, such as [my art bot project 'Helvetica Bot'](/posts/resurrection-of-helvetica-bot/) will be easily verifiable as mine because it will have a handle that is a subdomain of jacklorusso.com — for example, [@helveticabot.jacklorusso.com](https://bsky.app/profile/helveticabot.jacklorusso.com).
 
-## The DNS method
+## The usual way: the DNS method
 
 If you've got a domain, you can do this too! Check out ['How to set your domain as your handle'](https://blueskyweb.xyz/blog/4-28-2023-domain-handle-tutorial) on the Bluesky blog.
 
@@ -19,7 +19,7 @@ Now, for most cases, adding a DNS record is how you'll set a domain handle. This
 
 ![Screenshot of the Change Handle modal dialog in Bluesky account preferences, "DNS Panel" tab selected. Instructions are provided for how to update a TXT record with your DID.](./change-handle-dns-panel.png)
 
-## The HTTP (or non-DNS) method
+## The 'other' way: the HTTP method
 
 However, there is another way to set a domain handle that doesn't involve DNS at all (although this doesn't mean it is easier). From the Bluesky blog mentioned above:
 
