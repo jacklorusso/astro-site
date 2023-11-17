@@ -26,7 +26,7 @@ const comments = mentions.filter(
     <div>
       <p class="mb-0 text-accent-2">
         <strong>{comments.length}</strong>{" "}
-        {`Mention${comments.length > 1 ? "s" : ""}`}
+        {`mention${comments.length > 1 ? "s" : ""}`}
       </p>
       <ul
         class="mt-0 divide-y divide-gray-300 dark:divide-gray-700 ps-0"
@@ -38,17 +38,17 @@ const comments = mentions.filter(
               mention.author.url && mention.author.url !== "" ? (
                 <a
                   href={mention.author.url}
-                  class="not-prose shrink-0 overflow-hidden rounded-full outline-none ring-2 ring-transparent hover:ring-link focus-visible:ring-4 focus-visible:ring-link"
+                  class="not-prose shrink-0 overflow-hidden rounded-full"
                   target="_blank"
                   rel="noopener noreferrer"
                   title={mention.author.name}
                 >
                   <Image
-                    class="my-0 h-8 w-8"
+                    class="my-0 h-8 w-8 rounded-full"
                     src={mention.author?.photo}
                     alt={mention.author?.name}
-                    width={36}
-                    height={36}
+                    width={48}
+                    height={48}
                   />
                 </a>
               ) : (

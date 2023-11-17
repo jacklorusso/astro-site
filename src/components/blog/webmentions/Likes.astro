@@ -20,7 +20,7 @@ const likesToShow = likes
     <div>
       <p class="mb-0 text-accent-2">
         <strong>{likes.length}</strong>
-        {likes.length > 1 ? " People" : " Person"} liked this
+        {likes.length > 1 ? " people" : " person"} liked this
       </p>
       {!!likesToShow.length && (
         <ul class="flex list-none flex-wrap overflow-hidden ps-2" role="list">
@@ -28,17 +28,16 @@ const likesToShow = likes
             <li class="-ms-2">
               <a
                 href={like.author?.url}
-                class="not-prose relative inline-block overflow-hidden rounded-full outline-none ring-2 ring-textColor hover:z-10 hover:ring-4 hover:ring-link focus-visible:z-10 focus-visible:ring-4 focus-visible:ring-link"
                 target="_blank"
                 rel="noopener noreferrer"
                 title={like.author?.name}
               >
                 <Image
-                  class="my-0 inline-block h-12 w-12"
-                  src={like.author!.photo}
-                  alt={like.author!.name}
-                  width={48}
-                  height={48}
+                  class="my-0 h-8 w-8 rounded-full"
+                  src={like.author?.photo!}
+                  alt={like.author?.name}
+                  width={36}
+                  height={36}
                 />
               </a>
             </li>

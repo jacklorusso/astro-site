@@ -47,12 +47,12 @@ async function fetchWebmentions(timeFrom: string | null, perPage = 1000) {
 // Merge cached entries [a] with fresh webmentions [b], merge by wm-id
 function mergeWebmentions(
   a: WebmentionsCache,
-  b: WebmentionsFeed,
+  b: WebmentionsFeed
 ): WebmentionsChildren[] {
   return Array.from(
     [...a.children, ...b.children]
       .reduce((map, obj) => map.set(obj["wm-id"], obj), new Map())
-      .values(),
+      .values()
   );
 }
 
@@ -62,7 +62,11 @@ export function filterWebmentions(webmentions: WebmentionsChildren[]) {
     // filter out replies from me as they look weird
     if (
       webmention["wm-property"] === "in-reply-to" &&
-      webmention.author?.url === "https://bsky.app/profile/jacklorusso.com"
+      (webmention.author?.url === "https://bsky.app/profile/jacklorusso.com" ||
+        webmention.author?.url ===
+          "https://bsky.app/profile/jacklorusso.com/" ||
+        webmention.author?.url === "https://jacklorusso.com" ||
+        webmention.author?.url === "https://jacklorusso.com/")
     ) {
       return false;
     }
