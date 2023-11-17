@@ -66,7 +66,7 @@ export const GET: APIRoute = () => {
 };
 ```
 
-**One of the most _minimal_ ways to use the HTTP method of domain verification**.
+A pretty minimal amount of code to use the HTTP method of domain verification!
 
 Feel free to clone this, update the `src/pages/.well-known/atproto-did.ts` file with your own DID, build the site and deploy it somewhere - or just copy the code above and put it in your existing Astro site. Then you'll be able to verify your custom domain handle on Bluesky with the HTTP method!
 
