@@ -1,0 +1,327 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "@/layouts/Base";
+
+// 2023 books
+import tomorrowandtomorrowandtomorrow from "../assets/books/tomorrowandtomorrowandtomorrow.jpeg";
+import pachinko from "../assets/books/pachinko.jpeg";
+import alittlelife from "../assets/books/alittlelife.jpeg";
+import lastargumentofkings from "../assets/books/lastargumentofkings.jpeg";
+import loveandvirtue from "../assets/books/loveandvirtue.jpeg";
+import beforetheyarehanged from "../assets/books/beforetheyarehanged.jpeg";
+import thebladeitself from "../assets/books/thebladeitself.jpeg";
+import assassinsfate from "../assets/books/assassinsfate.jpeg";
+import foolsquest from "../assets/books/foolsquest.jpeg";
+import foolsassassin from "../assets/books/foolsassassin.jpeg";
+import bloodofdragons from "../assets/books/bloodofdragons.jpeg";
+import cityofdragons from "../assets/books/cityofdragons.jpeg";
+import dragonhaven from "../assets/books/dragonhaven.jpeg";
+import dragonkeeper from "../assets/books/dragonkeeper.jpeg";
+import foolsfate from "../assets/books/foolsfate.jpeg";
+import goldenfool from "../assets/books/goldenfool.jpeg";
+import foolserrand from "../assets/books/foolserrand.jpeg";
+import shipofdestiny from "../assets/books/shipofdestiny.jpeg";
+import madship from "../assets/books/madship.jpeg";
+// 2022 books
+import shipofmagic from "../assets/books/shipofmagic.jpeg";
+import assassinsquest from "../assets/books/assassinsquest.jpeg";
+import royalassassin from "../assets/books/royalassassin.jpeg";
+import assassinsapprentice from "../assets/books/assassinsapprentice.jpeg";
+import rhythmofwar from "../assets/books/rhythmofwar.jpeg";
+import fuckitillstarttomorrow from "../assets/books/fuckitillstarttomorrow.jpeg";
+import edgedancer from "../assets/books/edgedancer.jpeg";
+import weshouldallbefeminists from "../assets/books/weshouldallbefeminists.jpeg";
+import theoldlie from "../assets/books/theoldlie.jpeg";
+import halfofayellowsun from "../assets/books/halfofayellowsun.jpeg";
+import thecompletepersepolis from "../assets/books/thecompletepersepolis.jpeg";
+import burntshadows from "../assets/books/burntshadows.jpeg";
+import oathbringer from "../assets/books/oathbringer.jpeg";
+
+// 308 w * 468 h
+
+const meta = {
+  title: "Reading log",
+  description:
+    "Tracking which books I've read, and progress towards my reading goal",
+};
+
+type BookEntry = {
+  title: string;
+  author: string;
+  published: number;
+  imageSrc: ImageMetadata;
+};
+
+type Years = {
+  year: number;
+  readingGoal: number;
+  booksRead: BookEntry[];
+};
+
+const read: Years[] = [
+  {
+    year: 2023,
+    readingGoal: 13,
+    booksRead: [
+      {
+        title: "Tomorrow, and Tomorrow, and Tomorow",
+        author: "Gabrielle Zevin",
+        published: 2022,
+        imageSrc: tomorrowandtomorrowandtomorrow,
+      },
+      {
+        title: "Pachinko",
+        author: "Min Jin Lee",
+        published: 2017,
+        imageSrc: pachinko,
+      },
+      {
+        title: "A Little Life",
+        author: "Hanya Yanigihara",
+        published: 2015,
+        imageSrc: alittlelife,
+      },
+      {
+        title: "Last Argument of Kings",
+        author: "Joe Abercrombie",
+        published: 2008,
+        imageSrc: lastargumentofkings,
+      },
+      {
+        title: "Love & Virtue",
+        author: "Diana Reid",
+        published: 2021,
+        imageSrc: loveandvirtue,
+      },
+      {
+        title: "Before They Are Hanged",
+        author: "Joe Abercrombie",
+        published: 2007,
+        imageSrc: beforetheyarehanged,
+      },
+      {
+        title: "The Blade Itself",
+        author: "Joe Abercrombie",
+        published: 2006,
+        imageSrc: thebladeitself,
+      },
+      {
+        title: "Assassin’s Fate",
+        author: "Robin Hobb",
+        published: 2017,
+        imageSrc: assassinsfate,
+      },
+      {
+        title: "Fools’s Quest",
+        author: "Robin Hobb",
+        published: 2015,
+        imageSrc: foolsquest,
+      },
+      {
+        title: "Fools’s Assassin",
+        author: "Robin Hobb",
+        published: 2014,
+        imageSrc: foolsassassin,
+      },
+      {
+        title: "Blood of Dragons",
+        author: "Robin Hobb",
+        published: 2013,
+        imageSrc: bloodofdragons,
+      },
+      {
+        title: "City of Dragons",
+        author: "Robin Hobb",
+        published: 2011,
+        imageSrc: cityofdragons,
+      },
+      {
+        title: "Dragon Haven",
+        author: "Robin Hobb",
+        published: 2010,
+        imageSrc: dragonhaven,
+      },
+      {
+        title: "The Dragon Keeper",
+        author: "Robin Hobb",
+        published: 2009,
+        imageSrc: dragonkeeper,
+      },
+      {
+        title: "Fool’s Fate",
+        author: "Robin Hobb",
+        published: 2003,
+        imageSrc: foolsfate,
+      },
+      {
+        title: "Golden Fool",
+        author: "Robin Hobb",
+        published: 2002,
+        imageSrc: goldenfool,
+      },
+      {
+        title: "Fool’s Errand",
+        author: "Robin Hobb",
+        published: 2001,
+        imageSrc: foolserrand,
+      },
+      {
+        title: "Ship of Destiny",
+        author: "Robin Hobb",
+        published: 2000,
+        imageSrc: shipofdestiny,
+      },
+    ],
+  },
+  {
+    year: 2022,
+    readingGoal: 12,
+    booksRead: [
+      {
+        title: "The Mad Ship",
+        author: "Robin Hobb",
+        published: 1999,
+        imageSrc: madship,
+      },
+      {
+        title: "Ship of Magic",
+        author: "Robin Hobb",
+        published: 1998,
+        imageSrc: shipofmagic,
+      },
+      {
+        title: "Assassin’s Quest",
+        author: "Robin Hobb",
+        published: 1997,
+        imageSrc: assassinsquest,
+      },
+      {
+        title: "Royal Assassin",
+        author: "Robin Hobb",
+        published: 1996,
+        imageSrc: royalassassin,
+      },
+      {
+        title: "Assassin’s Apprentice",
+        author: "Robin Hobb",
+        published: 1995,
+        imageSrc: assassinsapprentice,
+      },
+      {
+        title: "Rhythm of War",
+        author: "Brandon Sanderson",
+        published: 2020,
+        imageSrc: rhythmofwar,
+      },
+      {
+        title: "F*ck It, I'll Start Tomorrow",
+        author: "Action Bronson",
+        published: 2021,
+        imageSrc: fuckitillstarttomorrow,
+      },
+      {
+        title: "We Should All Be Feminists",
+        author: "Chimamanda Ngozi Adichie",
+        published: 2014,
+        imageSrc: weshouldallbefeminists,
+      },
+      {
+        title: "The Old Lie",
+        author: "Claire G. Coleman",
+        published: 2019,
+        imageSrc: theoldlie,
+      },
+      {
+        title: "Half of a Yellow Sun",
+        author: "Chimamanda Ngozi Adichie",
+        published: 2006,
+        imageSrc: halfofayellowsun,
+      },
+      {
+        title: "The Complete Persepolis",
+        author: "Marjane Satrapi",
+        published: 2003,
+        imageSrc: thecompletepersepolis,
+      },
+      {
+        title: "Burnt Shadows",
+        author: "Kamila Shamsie",
+        published: 2009,
+        imageSrc: burntshadows,
+      },
+      {
+        title: "Oathbringer",
+        author: "Brandon Sanderson",
+        published: 2017,
+        imageSrc: oathbringer,
+      },
+      {
+        title: "Edgedancer",
+        author: "Brandon Sanderson",
+        published: 2016,
+        imageSrc: edgedancer,
+      },
+    ],
+  },
+];
+---
+
+<PageLayout meta={meta}>
+  <h1 class="title mb-6">{meta.title}</h1>
+  <div
+    class="prose prose-cactus prose-headings:font-semibold prose-a:font-normal prose-th:before:content-none"
+  >
+    <section class="mt-8">
+      <!-- <BlueskyFeed postLimit={90} /> -->
+      {
+        read.map((year) => {
+          const readingGoalProgress = Math.round(
+            (year.booksRead.length / year.readingGoal) * 100
+          );
+          const progressBarWidth =
+            readingGoalProgress < 100 ? readingGoalProgress : 100;
+          return (
+            <div class="mb-32">
+              <h2 class="title">{year.year}</h2>
+              <div>
+                Goal: {year.readingGoal} books{" "}
+                {`(${Math.round(
+                  (year.booksRead.length / year.readingGoal) * 100
+                )}% complete, ${year.booksRead.length} books read)`}
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-800 mt-4">
+                <div
+                  class="bg-accent h-2.5 rounded-full"
+                  style={`width: ${progressBarWidth}%`}
+                />
+              </div>
+
+              <div class="mt-16 flex gap-10 justify-center flex-wrap">
+                {year.booksRead.map((book) => (
+                  <div class="h-[288px]">
+                    <Image
+                      src={book.imageSrc}
+                      alt=""
+                      loading="eager"
+                      fetchpriority="high"
+                      class="m-0 w-32 shadow"
+                    />
+                    <div class="mt-4 text-sm w-32">
+                      <div>
+                        <span style="text-wrap: balance;">
+                          <span class="italic">{book.title}</span>
+                          <span>{` (${book.published})`}</span>
+                        </span>
+                      </div>
+                      <div>{book.author}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })
+      }
+    </section>
+  </div>
+</PageLayout>

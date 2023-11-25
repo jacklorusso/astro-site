@@ -7,6 +7,10 @@ export const MENU_LINKS = [
     title: "writing",
     path: "/posts",
   },
+  {
+    title: "reading",
+    path: "/reading-log",
+  },
   // {
   //   title: "micro-blog",
   //   path: "/micro-blog/",
