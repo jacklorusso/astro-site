@@ -1,5 +1,5 @@
 ---
-title: "Reco: James Blake has my album of the year"
+title: "Reco: James Blake wins my album of the year"
 description: "Playing Robots Into Heaven has it all. I'm calling album of the year early!"
 publishDate: "1 Dec 2023"
 tags: ["reco", "music", "album-of-the-year"]
