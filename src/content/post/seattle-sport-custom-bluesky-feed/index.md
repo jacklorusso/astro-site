@@ -2,7 +2,7 @@
 title: "How I made the 'Seattle Sport' custom Bluesky feed"
 description: "Custom feeds are the best. I made one for my favourite sporting city — here's what I learned!"
 publishDate: "26 Oct 2023"
-tags: ["howto", "bluesky", "atproto", "social media", "seattle", "sport"]
+tags: ["bluesky", "atproto", "social media", "seattle", "sport", "demo"]
 draft: false
 ---
 
