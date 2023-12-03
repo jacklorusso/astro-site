@@ -31,6 +31,18 @@
     @apply mx-auto flex h-full max-w-2xl flex-col bg-bgColor px-8 pt-16 font-sans font-normal text-textColor;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  article,
+  section,
+  p {
+    text-wrap: pretty;
+  }
+
   a {
     @apply underline hover:text-link;
   }
