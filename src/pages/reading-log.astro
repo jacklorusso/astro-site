@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import PageLayout from "@/layouts/Base";
 
 // 2023 books
+import flowersofevil from "../assets/books/flowersofevil.jpeg";
 import tomorrowandtomorrowandtomorrow from "../assets/books/tomorrowandtomorrowandtomorrow.jpeg";
 import dearijeawele from "../assets/books/dearijeawele.jpeg";
 import pachinko from "../assets/books/pachinko.jpeg";
@@ -64,6 +65,12 @@ const read: Years[] = [
     year: 2023,
     readingGoal: 13,
     booksRead: [
+      {
+        title: "The Flowers of Evil",
+        author: "Charles Baudelaire",
+        published: 1857,
+        imageSrc: flowersofevil,
+      },
       {
         title: "Tomorrow, and Tomorrow, and Tomorow",
         author: "Gabrielle Zevin",
@@ -315,10 +322,8 @@ const read: Years[] = [
                     />
                     <div class="mt-4 text-sm w-32">
                       <div>
-                        <span style="text-wrap: balance;">
-                          <span class="italic">{book.title}</span>
-                          <span>{` (${book.published})`}</span>
-                        </span>
+                        <span class="italic">{book.title}</span>
+                        <span>{` (${book.published})`}</span>
                       </div>
                       <div>{book.author}</div>
                     </div>
