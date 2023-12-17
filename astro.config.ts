@@ -30,6 +30,10 @@ export default defineConfig({
     sitemap(),
     prefetch(),
   ],
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: "hover",
+  },
   vite: {
     // ssr: {
     //   noExternal: ["@atproto/api"],
