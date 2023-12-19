@@ -37,6 +37,6 @@ Like I said, design wise it's pretty normcore up in here :(
 
 >the more boring personal websites I see the more I want to skip the boring corporate handshake at the beginning. Because you’re more than a list of accomplishments, more than a career, more than a Wordpress template, or SQL query, more than one subject for a narrow audience.
 
-I do feel like the **write first, (re)design later** approach has set me free and allowed me to capture _some_ of the spirit discussed in Robin's piece, and build a more sustainable writing/building practice. But there's certainly a _lot_ more room for weirdo web vibes...
+I do feel like the **write first, (re)design later** approach has set me free and allowed me to capture _some_ of the spirit discussed in Robin's piece, and build a more sustainable writing/building practice. But there's certainly a _lot_ more room for weirdo web design vibes...
 
 So is it "later" now?
