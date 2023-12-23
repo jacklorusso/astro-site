@@ -12,20 +12,26 @@ const allPosts = await getCollection("post", ({ data }) => !data.draft);
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 const now: Array<{ title: string; desc: string; href?: string }> = [
+/*
+  {
+    title: "Traveling in",
+    desc: "Colombia 🇨🇴"
+  },
+*/
   {
     title: "Reading",
-    desc: "The Stone Sky — N.K. Jemisin",
-    href: "https://www.goodreads.com/book/show/31817749-the-stone-sky",
+    desc: "The Long Way to a Small, Angry Planet — Becky Chambers",
+    href: "https://app.thestorygraph.com/books/b9c6f8d4-bc72-4264-9e83-6a8752dbef32",
   },
   {
     title: "Watching",
-    desc: "The Boys — Prime",
-    href: "https://www.imdb.com/title/tt1869454/",
+    desc: "This Is Us — Prime",
+    href: "https://www.imdb.com/title/tt5555260/",
   },
   {
     title: "Listening to",
-    desc: "Water Tiger — oqbqbo & Scandinavian Star",
-    href: "https://open.spotify.com/album/5OvwcikaMeadqII0h5q3rR?si=67dv21hrRAWTTAPhNsonEg",
+    desc: "Again — Oneohtrix Point Never",
+    href: "https://open.spotify.com/album/2zz6j2mGH5JHk0ihNvy6KM?si=A12SfrTiRkqsv_YaRKL_Jg",
   },
 ];
 ---
