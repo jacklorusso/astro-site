@@ -14,18 +14,18 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const now: Array<{ title: string; desc: string; href?: string }> = [
   {
     title: "Reading",
-    desc: "Conquistador: Hernán Cortés, King Montezuma, and the Last Stand of the Aztecs — Buddy Levy",
-    href: "https://app.thestorygraph.com/books/5d983c70-e5cc-47bc-a887-866d09238ea4",
+    desc: "The Nineties: A Book — Chuck Klosterman",
+    href: "https://app.thestorygraph.com/books/7ae2b251-b5d3-4115-998d-301cc4e78538",
   },
   {
     title: "Listening to",
-    desc: "still slipping vol. 1 — Joy Orbison",
-    href: "https://open.spotify.com/album/5atrOg1aO4d5KEcYo4UBIA?si=GcDLJUSlTsqgH9dRAjSuag",
+    desc: "Finally We Are No One — múm",
+    href: "https://open.spotify.com/album/2XCcnYJJQXYoWm5oc20x9k?si=xyURMYkiQz2x_7JCQti6wA",
   },
   {
     title: "Watching",
-    desc: "This Is Us — Prime",
-    href: "https://www.imdb.com/title/tt5555260/",
+    desc: "Nemesis — ABC",
+    href: "https://iview.abc.net.au/show/nemesis",
   },
 ];
 ---
@@ -33,21 +33,31 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
 <PageLayout meta={{ title: "Home" }}>
   <section>
     <h1 class="title mb-6 sm:mb-10 sm:text-5xl" style="line-height: 1.1">
-      Jack Lo Russo is a software engineer and designer from
-      Sydney,&nbsp;Australia.
+      <div>
+        Jack Lo Russo is a{" "}<span class="home-strikethrough"
+          >software engineer and designer</span
+        >
+        <span class="italic text-accent">*teaching student</span>{" "}
+      </div>
+      <div>from Sydney,&nbsp;Australia.</div>
     </h1>
-    <p class="mb-4">
-      For a lot of my career, I’ve had a thing for design systems — building
-      them, maintaining them, scaling them. I’m currently working on the <a
-        href="https://atlassian.design">Atlassian Design System</a
-      >. Outside of tech, I’m passionate about education and the arts, and I’m a
-      huge Sydney and Seattle sports&nbsp;fan&nbsp;⚾️
+    <p class="mb-2">
+      I'm currently studying a <a
+        href="https://www.unsw.edu.au/study/postgraduate/master-of-teaching-secondary?studentType=Domestic"
+        >Master of Teaching (Secondary) at UNSW</a
+      > — kicking off a career change to be a high school teacher. Before this, I
+      worked in tech in various roles at the intersection of development and design;
+      software engineer, design technologist, product designer. Most recently I spent
+      almost 4 years working on the <a href="https://atlassian.design"
+        >Atlassian Design&nbsp;System</a
+      >.
     </p>
+    <p>Oh yeah. And I’m a huge Sydney and Seattle sports&nbsp;fan&nbsp;⚾️</p>
     <!-- <nav aria-label="Social links">
       <SocialList />
     </nav> -->
   </section>
-  <section class="mt-16">
+  <section class="mt-12">
     <div class="flex items-baseline">
       <h2 class="title mb-4 text-xl">Recent writing</h2>
     </div>
@@ -61,7 +71,7 @@ const now: Array<{ title: string; desc: string; href?: string }> = [
       }
     </ul>
   </section>
-  <section class="mt-16">
+  <section class="mt-12">
     <h2 class="title mb-4 text-xl">Now</h2>
     <ul class="space-y-4 sm:space-y-2">
       {

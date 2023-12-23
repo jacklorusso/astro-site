@@ -54,6 +54,16 @@
   .title {
     @apply text-3xl font-semibold;
   }
+
+  .home-strikethrough {
+    text-decoration: line-through;
+    /* text-decoration-style: wavy; */
+    text-decoration-color: var(--theme-accent);
+    text-decoration-thickness: 6px;
+    @media (min-width: 576px) {
+      text-decoration-thickness: 8px;
+    }
+  }
 }
 
 @tailwind components;
