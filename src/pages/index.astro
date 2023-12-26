@@ -12,12 +12,10 @@ const allPosts = await getCollection("post", ({ data }) => !data.draft);
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 const now: Array<{ title: string; desc: string; href?: string }> = [
-/*
   {
     title: "Traveling in",
     desc: "Colombia 🇨🇴"
   },
-*/
   {
     title: "Reading",
     desc: "The Long Way to a Small, Angry Planet — Becky Chambers",
