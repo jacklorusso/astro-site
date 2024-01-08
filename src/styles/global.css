@@ -28,7 +28,7 @@
   }
 
   html body {
-    @apply mx-auto flex h-full max-w-2xl flex-col bg-bgColor px-8 pt-16 font-sans font-normal text-textColor;
+    @apply mx-auto flex h-full max-w-2xl flex-col bg-bgColor px-8 pt-8 font-sans font-normal text-textColor;
   }
 
   h1,
