@@ -2,7 +2,17 @@
 import { Image } from "astro:assets";
 import PageLayout from "@/layouts/Base";
 
+// 2024 books
+import darkemu from "../assets/books/darkemu.jpeg";
+import lefthandofdarkness from "../assets/books/lefthandofdarkness.jpeg";
+import reallife from "../assets/books/reallife.jpeg";
+import galaxyandthegroundwithin from "../assets/books/galaxyandthegroundwithin.jpeg";
+
 // 2023 books
+import fromtherivertothesea from "../assets/books/fromtherivertothesea.jpeg";
+import recordofaspacebornfew from "../assets/books/recordofaspacebornfew.jpeg";
+import closedandcommonorbit from "../assets/books/closedandcommonorbit.jpeg";
+import longwaytoasmallangryplanet from "../assets/books/longwaytoasmallangryplanet.jpeg";
 import stonesky from "../assets/books/stonesky.jpeg";
 import obeliskgate from "../assets/books/obeliskgate.jpeg";
 import fifthseason from "../assets/books/fifthseason.jpeg";
@@ -66,9 +76,63 @@ type Years = {
 
 const read: Years[] = [
   {
+    year: 2024,
+    readingGoal: 30,
+    booksRead: [
+      {
+        title: "Dark Emu",
+        author: "Bruce Pascoe",
+        published: 2014,
+        imageSrc: darkemu,
+      },
+      {
+        title: "The Left Hand of Darkness",
+        author: "Ursula K. Le Guin",
+        published: 1969,
+        imageSrc: lefthandofdarkness,
+      },
+      {
+        title: "Real Life",
+        author: "Brandon Taylor",
+        published: 2020,
+        imageSrc: reallife,
+      },
+      {
+        title: "The Galaxy, and the Ground Within",
+        author: "Becky Chambers",
+        published: 2021,
+        imageSrc: galaxyandthegroundwithin,
+      },
+    ],
+  },
+  {
     year: 2023,
     readingGoal: 13,
     booksRead: [
+      {
+        title: "From the River to the Sea: Essays for a Free Palestine",
+        author: " ",
+        published: 2023,
+        imageSrc: fromtherivertothesea,
+      },
+      {
+        title: "Record of a Spaceborn Few",
+        author: "Becky Chambers",
+        published: 2018,
+        imageSrc: recordofaspacebornfew,
+      },
+      {
+        title: "A Closed and Common Orbit",
+        author: "Becky Chambers",
+        published: 2016,
+        imageSrc: closedandcommonorbit,
+      },
+      {
+        title: "The Long Way to a Small, Angry Planet",
+        author: "Becky Chambers",
+        published: 2014,
+        imageSrc: longwaytoasmallangryplanet,
+      },
       {
         title: "The Stone Sky",
         author: "N.K. Jemisin",
