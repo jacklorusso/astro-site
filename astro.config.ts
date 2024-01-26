@@ -32,12 +32,12 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: "hover",
   },
-  vite: {
-    // ssr: {
-    //   noExternal: ["@atproto/api"],
-    // },
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"],
-    },
-  },
+  // vite: {
+  //   // ssr: {
+  //   //   noExternal: ["@atproto/api"],
+  //   // },
+  //   optimizeDeps: {
+  //     exclude: ["@resvg/resvg-js"],
+  //   },
+  // },
 });
