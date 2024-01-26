@@ -8,7 +8,7 @@ import { remarkReadingTime } from "./src/utils/remark-reading-time";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://jacklorusso.com/",
+  site: 'https://jacklorusso.com/',
   markdown: {
     remarkPlugins: [remarkUnwrapImages, remarkReadingTime, smartypants],
     shikiConfig: {
