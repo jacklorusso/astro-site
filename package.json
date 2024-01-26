@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "sync": "astro sync",
-    "build": "astro build",
+    "build": "astro build --verbose",
     "postbuild": "pagefind --site dist",
     "preview": "astro preview",
     "format": "prettier -w --cache ."
