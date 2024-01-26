@@ -388,7 +388,10 @@ const read: Years[] = [
             readingGoalProgress < 100 ? readingGoalProgress : 100;
           return (
             <div class="mb-32">
-              <h2 class="title">{year.year}</h2>
+              <h2 class="title">
+                {year.year}{" "}
+                {year.booksRead.length > year.readingGoal ? "✅" : ""}
+              </h2>
               <div>
                 Goal: {year.readingGoal} books{" "}
                 {`(${Math.round(
