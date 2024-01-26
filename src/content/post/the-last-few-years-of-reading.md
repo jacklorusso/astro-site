@@ -3,7 +3,6 @@ title: "Looking back on the last few years of reading"
 description: "Reflecting on how I rediscovered the joy of reading, and on reading goals in general."
 publishDate: "25 Jan 2024"
 tags: ["reading", "books", "goals"]
-draft: true
 ---
 
 I'm really grateful that I've rediscovered the joy of reading over the past few years.

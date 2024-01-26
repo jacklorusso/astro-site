@@ -6,13 +6,13 @@ settings:
 
 dependencies:
   '@astrojs/rss':
-    specifier: ^4.0.1
+    specifier: ^4.0.3
     version: 4.0.3
   '@atproto/api':
     specifier: ^0.7.4
     version: 0.7.4
   astro:
-    specifier: ^4.0.6
+    specifier: ^4.2.4
     version: 4.2.4(typescript@5.3.3)
   astro-google-analytics:
     specifier: ^1.0.3
@@ -21,7 +21,7 @@ dependencies:
     specifier: ^14.0.0
     version: 14.0.0
   remark-smartypants:
-    specifier: ^2.0.0
+    specifier: ^2.1.0
     version: 2.1.0
   sanitize-html:
     specifier: ^2.11.0
@@ -33,15 +33,15 @@ dependencies:
     specifier: ^0.3.2
     version: 0.3.2
   sharp:
-    specifier: ^0.33.0
+    specifier: ^0.33.2
     version: 0.33.2
 
 devDependencies:
   '@astrojs/mdx':
-    specifier: ^2.0.1
+    specifier: ^2.1.0
     version: 2.1.0(astro@4.2.4)
   '@astrojs/sitemap':
-    specifier: ^3.0.3
+    specifier: ^3.0.5
     version: 3.0.5
   '@astrojs/tailwind':
     specifier: 5.0.3
@@ -59,10 +59,10 @@ devDependencies:
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
   astro-eslint-parser:
-    specifier: ^0.16.0
+    specifier: ^0.16.2
     version: 0.16.2
   autoprefixer:
-    specifier: ^10.4.16
+    specifier: ^10.4.17
     version: 10.4.17(postcss@8.4.33)
   mdast-util-to-string:
     specifier: ^4.0.0
@@ -71,19 +71,19 @@ devDependencies:
     specifier: ^1.0.4
     version: 1.0.4
   postcss:
-    specifier: ^8.4.32
+    specifier: ^8.4.33
     version: 8.4.33
   postcss-html:
-    specifier: ^1.5.0
+    specifier: ^1.6.0
     version: 1.6.0
   prettier:
-    specifier: ^3.1.1
+    specifier: ^3.2.4
     version: 3.2.4
   prettier-plugin-astro:
-    specifier: ^0.12.2
+    specifier: ^0.12.3
     version: 0.12.3
   prettier-plugin-tailwindcss:
-    specifier: ^0.5.9
+    specifier: ^0.5.11
     version: 0.5.11(prettier-plugin-astro@0.12.3)(prettier@3.2.4)
   reading-time:
     specifier: ^1.5.0
@@ -92,7 +92,7 @@ devDependencies:
     specifier: ^4.0.0
     version: 4.0.0
   tailwindcss:
-    specifier: ^3.3.6
+    specifier: ^3.4.1
     version: 3.4.1
   typescript:
     specifier: ^5.3.3
@@ -1624,7 +1624,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001580
-      electron-to-chromium: 1.4.646
+      electron-to-chromium: 1.4.647
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
 
@@ -1936,8 +1936,8 @@ packages:
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  /electron-to-chromium@1.4.646:
-    resolution: {integrity: sha512-vThkQ0JuF45qT/20KbRgM56lV7IuGt7SjhawQ719PDHzhP84KAO1WJoaxgCoAffKHK47FmVKP1Fqizx7CwK1SA==}
+  /electron-to-chromium@1.4.647:
+    resolution: {integrity: sha512-Z/fTNGwc45WrYQhPaEcz5tAJuZZ8G7S/DBnhS6Kgp4BxnS40Z/HqlJ0hHg3Z79IGVzuVartIlTcjw/cQbPLgOw==}
 
   /emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
