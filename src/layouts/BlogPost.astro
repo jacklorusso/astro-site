@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 
 import BaseLayout from "./Base.astro";
 import BlogHero from "@/components/blog/Hero";
-import WebMentions from "@/components/blog/webmentions/index";
+// import WebMentions from "@/components/blog/webmentions/index";
 
 interface Props {
   post: CollectionEntry<"post">;
@@ -84,9 +84,9 @@ const { headings } = await post.render();
             </p>
           </div>
         </section>
-        <section>
+        <!-- <section>
           <WebMentions />
-        </section>
+        </section> -->
       </div>
     </article>
   </div>
