@@ -3,6 +3,9 @@ import { Image } from "astro:assets";
 import PageLayout from "@/layouts/Base";
 
 // 2024 books
+import conquistador from "../assets/books/conquistador.jpeg";
+import dune from "../assets/books/dune.jpeg";
+import dynasty from "../assets/books/dynasty.jpeg";
 import darkemu from "../assets/books/darkemu.jpeg";
 import lefthandofdarkness from "../assets/books/lefthandofdarkness.jpeg";
 import reallife from "../assets/books/reallife.jpeg";
@@ -79,6 +82,24 @@ const read: Years[] = [
     year: 2024,
     readingGoal: 30,
     booksRead: [
+      {
+        title: "Conquistador",
+        author: "Buddy Levy",
+        published: 2008,
+        imageSrc: conquistador,
+      },
+      {
+        title: "Dune",
+        author: "Frank Herbert",
+        published: 1965,
+        imageSrc: dune,
+      },
+      {
+        title: "The Dynasty",
+        author: "Jeff Benedict",
+        published: 2020,
+        imageSrc: dynasty,
+      },
       {
         title: "Dark Emu",
         author: "Bruce Pascoe",
@@ -382,7 +403,7 @@ const read: Years[] = [
       {
         read.map((year) => {
           const readingGoalProgress = Math.round(
-            (year.booksRead.length / year.readingGoal) * 100
+            (year.booksRead.length / year.readingGoal) * 100,
           );
           const progressBarWidth =
             readingGoalProgress < 100 ? readingGoalProgress : 100;
@@ -395,17 +416,17 @@ const read: Years[] = [
               <div>
                 Goal: {year.readingGoal} books{" "}
                 {`(${Math.round(
-                  (year.booksRead.length / year.readingGoal) * 100
+                  (year.booksRead.length / year.readingGoal) * 100,
                 )}% complete, ${year.booksRead.length} books read)`}
               </div>
-              <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-800 mt-4">
+              <div class="mt-4 h-2.5 w-full rounded-full bg-gray-200 dark:bg-gray-800">
                 <div
                   class="bg-accent h-2.5 rounded-full"
                   style={`width: ${progressBarWidth}%`}
                 />
               </div>
 
-              <div class="mt-16 flex gap-16 sm:gap-8 justify-center flex-wrap">
+              <div class="mt-16 flex flex-wrap justify-center gap-16 sm:gap-8">
                 {year.booksRead.map((book) => (
                   <div class="h-[288px]">
                     <Image
@@ -415,7 +436,7 @@ const read: Years[] = [
                       fetchpriority="high"
                       class="m-0 w-32 shadow"
                     />
-                    <div class="mt-4 text-sm w-32">
+                    <div class="mt-4 w-32 text-sm">
                       <div>
                         <span class="italic">{book.title}</span>
                         <span>{` (${book.published})`}</span>
