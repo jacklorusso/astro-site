@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import PageLayout from "@/layouts/Base";
 
 // 2024 books
+import neverwhere from "../assets/books/neverwhere.jpeg";
+import nineties from "../assets/books/nineties.jpeg";
 import conquistador from "../assets/books/conquistador.jpeg";
 import dune from "../assets/books/dune.jpeg";
 import dynasty from "../assets/books/dynasty.jpeg";
@@ -82,6 +84,18 @@ const read: Years[] = [
     year: 2024,
     readingGoal: 30,
     booksRead: [
+      {
+        title: "Neverwhere",
+        author: "Neil Gaiman",
+        published: 1996,
+        imageSrc: neverwhere,
+      },
+      {
+        title: "The Nineties",
+        author: "Chuck Klosterman",
+        published: 2022,
+        imageSrc: nineties,
+      },
       {
         title: "Conquistador",
         author: "Buddy Levy",
