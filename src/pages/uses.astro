@@ -1,0 +1,71 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "@/layouts/Base";
+
+const meta = {
+  title: "Uses",
+  description: "My setup: gear, tech and apps that I rely on",
+};
+---
+
+<PageLayout meta={meta}>
+  <h1 class="title mb-6">{meta.title}</h1>
+  <div
+    class="prose prose-cactus prose-headings:font-semibold prose-a:font-normal prose-th:before:content-none"
+  >
+    <p>
+      It's taken me years to collect and fine tune this, but I'm now at a point
+      where I'm very happy with my setup.
+    </p>
+    <h2>Gear</h2>
+    <ul>
+      <li>Remote Projects Easy Tote: my daily driver, grab and go bag</li>
+      <li>
+        Wilderness Equipment 'Traverse' 33L: big enough for active travel, small
+        enough for carry-on
+      </li>
+      <li>
+        Samsonite Hi-Fi Spinner 55: tough, light, and fits even the stingiest
+        airline cabin size (looking at you Ryanair/Easyjet)
+      </li>
+      <li>
+        Seiko Prospex SSC807J1: daily driver, favourite watch — both a diver and
+        chronograph, 'Sumo' case, plus little unique details like a green dial
+        to celebrate the Seiko 140th anniversary (and it's sentimental because
+        it was an anniversary gift from my partner to me)
+      </li>
+    </ul>
+    <h2>Tech</h2>
+    <ul>
+      <li>
+        iPhone 11 Pro Max: been running this since 2019, one battery service
+      </li>
+      <li>
+        MacBook Pro 2019 16-inch: hate the touchbar, keeps me warm in winter
+      </li>
+      <li>
+        Sony WH-1000XM5: best wireless noise-cancelling cans on the market in my
+        opinion
+      </li>
+      <li>
+        Jabra Elite Active 8: tough as nails, secure fit for exercise, and the
+        sound and battery life is surprisingly excellent
+      </li>
+    </ul>
+    <h2>Apps</h2>
+    <ul>
+      <li>
+        Things 3: heard the buzz for years, finally tried it out — the rumours
+        are true, simply elite design
+      </li>
+      <li>
+        Flow: clean little Pomodoro timer with powerful 'focus' options like
+        blocking websites, apps
+      </li>
+      <li>
+        Zed: no-frills, super-fast text editor (but still use VS Code for some
+        projects)
+      </li>
+    </ul>
+  </div>
+</PageLayout>
