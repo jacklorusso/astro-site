@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import PageLayout from "@/layouts/Base";
 
 // 2024 books
+import upwardspiral from "../assets/books/upwardspiral.jpeg";
 import neverwhere from "../assets/books/neverwhere.jpeg";
 import nineties from "../assets/books/nineties.jpeg";
 import conquistador from "../assets/books/conquistador.jpeg";
@@ -84,6 +85,12 @@ const read: Years[] = [
     year: 2024,
     readingGoal: 30,
     booksRead: [
+      {
+        title: "The Upward Spiral",
+        author: "Alex Korb",
+        published: 2015,
+        imageSrc: upwardspiral,
+      },
       {
         title: "Neverwhere",
         author: "Neil Gaiman",
